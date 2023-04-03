@@ -20,6 +20,13 @@
     cursor: pointer;
 }
 
+.top img{
+    height: 25px;
+    background-color:#415078;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
 .menu{
     background-color: #415078;
     display: flex;
@@ -65,7 +72,7 @@
     align-items: center;
     width: 500px;
     background-color: #92A1C8;
-    border: solid black 1px;
+    border: solid black 1px ;
     
 }
 
@@ -106,7 +113,6 @@ p{
     color: #2A344D;;
     text-decoration: none;
     cursor: pointer;
-
 }
 
 .botao-cadastro:hover{
@@ -125,7 +131,6 @@ p{
     color: #2A344D;
     margin-bottom: 200px;
     cursor: pointer;
-
 }
 
 .botao-login:hover{
@@ -146,6 +151,6 @@ label{
 }
 
 .footer{
-    height: 150px;
+    height: 100px;
     background-color: #415078;
 }
