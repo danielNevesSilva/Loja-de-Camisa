@@ -1,6 +1,7 @@
 * {
  margin: 0px;
  background-color: #92A1C8;
+ font-family: sans-serif;
 }
 
 .top{
@@ -9,12 +10,14 @@
     justify-content: space-between;
     background-color: #415078;
     padding: 20px;
-    }
+
+ }
 .top a{
     text-decoration: none;
     border: none;
     background-color: #415078;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .menu{
@@ -40,6 +43,10 @@
     justify-content: center;
     align-items: center;
     margin-top: 100px;
+}
+
+.principal input{
+    cursor: pointer;
 }
 
 
@@ -86,21 +93,27 @@ p{
     margin: 7px;
 }
 
-.cadastro2 {
+.botao-cadastro {
     height: 37px;
     width: 200px;
     border-radius: 20px;
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 30px;
+    margin-left: 60px;
     background-color: #D9D9D9;
     border: none;
     color: #2A344D;;
     text-decoration: none;
+    cursor: pointer;
+
 }
 
-a button{
-    text-decoration: none;
+.botao-cadastro:hover{
+    box-shadow: 0px 8px 15px rgb(0 0 0 /20%);
+}
+
+.botao-login{
     display: block;
     border-radius: 20px;
     height: 37px;
@@ -111,6 +124,24 @@ a button{
     border: none;
     color: #2A344D;
     margin-bottom: 200px;
+    cursor: pointer;
+
+}
+
+.botao-login:hover{
+    box-shadow: 0px 8px 15px rgb(0 0 0 /20%);
+}
+
+
+
+label{
+    color: #ffffff;
+    font-size: 10px;
+}
+
+.principal-button:hover{
+    box-shadow: 0px 8px 15px rgb(0 0 0 /20%);
+    color: #415078;
 
 }
 
