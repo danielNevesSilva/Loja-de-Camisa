@@ -28,6 +28,6 @@ public class CreateCarServlet extends HttpServlet {
 
         new CadastroDao().createaccount(cadastro);
 
-        req.getRequestDispatcher("cadastro.html").forward(req, resp);
+        req.getRequestDispatcher("index.html").forward(req, resp);
     }
 }
