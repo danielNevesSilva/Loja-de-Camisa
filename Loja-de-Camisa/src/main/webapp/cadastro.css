@@ -1,18 +1,19 @@
 * {
- margin: 0px;
- background-color: #92A1C8;
- font-family: sans-serif;
+    margin: 0px;
+    background-color: #92A1C8;
+    font-family: sans-serif;
 }
 
-.top{
+.top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: #415078;
     padding: 20px;
 
- }
-.top a{
+}
+
+.top a {
     text-decoration: none;
     border: none;
     background-color: #415078;
@@ -20,14 +21,14 @@
     cursor: pointer;
 }
 
-.top img{
+.top img {
     height: 25px;
-    background-color:#415078;
+    background-color: #415078;
     margin-right: 20px;
     margin-top: 15px;
 }
 
-.menu{
+.menu {
     background-color: #415078;
     display: flex;
     flex-direction: row;
@@ -37,7 +38,7 @@
     margin: 2px;
 }
 
-.menu a{
+.menu a {
     background-color: #415078;
     margin: 5px 20px;
 }
@@ -52,7 +53,7 @@
     margin-top: 100px;
 }
 
-.principal input{
+.principal input {
     cursor: pointer;
 }
 
@@ -72,8 +73,8 @@
     align-items: center;
     width: 500px;
     background-color: #92A1C8;
-    border: solid black 1px ;
-    
+    border: solid black 1px;
+
 }
 
 .principal input {
@@ -90,14 +91,18 @@
     font-size: 10px;
 }
 
-.cadastro> p {
+.cadastro>p {
     size: 18px;
     font-family: sans-serif;
     align-items: center;
 }
 
-p{
+p {
     margin: 7px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .botao-cadastro {
@@ -110,16 +115,17 @@ p{
     margin-left: 60px;
     background-color: #D9D9D9;
     border: none;
-    color: #2A344D;;
+    color: #2A344D;
+    ;
     text-decoration: none;
     cursor: pointer;
 }
 
-.botao-cadastro:hover{
+.botao-cadastro:hover {
     box-shadow: 0px 8px 15px rgb(0 0 0 /20%);
 }
 
-.botao-login{
+.botao-login {
     display: block;
     border-radius: 20px;
     height: 37px;
@@ -133,24 +139,24 @@ p{
     cursor: pointer;
 }
 
-.botao-login:hover{
+.botao-login:hover {
     box-shadow: 0px 8px 15px rgb(0 0 0 /20%);
 }
 
 
 
-label{
+label {
     color: #ffffff;
     font-size: 10px;
 }
 
-.principal-button:hover{
+.principal-button:hover {
     box-shadow: 0px 8px 15px rgb(0 0 0 /20%);
     color: #415078;
 
 }
 
-.footer{
+.footer {
     height: 100px;
     background-color: #415078;
 }
