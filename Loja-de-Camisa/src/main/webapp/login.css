@@ -2,7 +2,6 @@
     margin: 0px;
     background-color: #92A1C8;
     font-family: sans-serif;
-    width 100%; 
    }
    
    .top{
@@ -80,7 +79,7 @@
    .principal input {
        display: block;
        background-color: #D9D9D9;
-       border-radius: 20px;
+       border-radius: 15px;
        height: 37px;
        width: 300px;
        border: 0px;
@@ -104,7 +103,7 @@
    .botao-login {
        height: 37px;
        width: 200px;
-       border-radius: 20px;
+       border-radius: 15px;
        font-size: 20px;
        margin-top: 20px;
        margin-bottom: 30px;
@@ -122,10 +121,9 @@
    
    .botao-cadastro{
        display: block;
-       border-radius: 20px;
+       border-radius: 15px;
        height: 37px;
        width: 200px;
-       border-radius: 20px;
        font-size: 20px;
        background-color: #D9D9D9;
        border: none;
@@ -153,8 +151,6 @@
    
    }
 
-  
-   
    .footer{
        height: 100px;
        background-color: #415078;
