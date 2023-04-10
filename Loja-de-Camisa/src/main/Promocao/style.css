@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: #415078;
+    height: 90px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.logo-inicio{
+   padding: 6px 13px;
+   background: #FFFFFF;
+   border-radius: 179.467px;
+   margin-left: 60px;
+    
+     
+}
+
+.direto{
+  word-spacing: 80px;
+}
+
+a{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+color: #FFFFFF;
+text-decoration: none;
+
+
+}
+
+.principal{
+    background-color: #92A1C8;
+
+}
+
+
+.icons{
+    color: #FFFFFF;
+    word-spacing: 20px;
+    margin-right: 20px;
+}
+
+.promocao{
+    padding: 100px 0px 0px 400px;
+}
+
+.promocao > h2{
+    font-family: "Poppins";
+    color: #2A344D;
+    font-size: 40px;
+
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.primeiro{
+    display: flex;
+    margin: 70px 0px 40px 400px;
+}
+.valor{
+    color: #000206;
+    font: "Poppins";
+}
+.frete{
+    color: #116939;
+    font: "Poppins";
+}
+.card-body{
+    padding: 10px 70px 0px 20px;
+    color: #FFFFFF;
+    line-height: 23px;
+}
+
+.segundo{
+    display: flex;
+    margin: 40px 0px 40px 400px;
+}
+
+.terceiro{
+    display: flex;
+    margin-left: 400px;
+    margin-bottom: 100px;
+    
+}
+
+.voltar-topo{
+  font-family: 'Jost';
+   padding: 15px 15px;
+   letter-spacing: 0.5px;   
+   border-radius: 179.467px;
+   margin: 0px 190px 10px 972px;
+}
+
+ button{
+    font-family: 'Jost';
+    background: #292F36;
+    color: #FFFFFF;
+    border-radius: 20px;
+    padding: 10px;
+}
+button:hover{
+    background: #424e5c;
+}
+
+.footer{
+    padding: 70px;
+    background-color: #415078;
+    
+}
