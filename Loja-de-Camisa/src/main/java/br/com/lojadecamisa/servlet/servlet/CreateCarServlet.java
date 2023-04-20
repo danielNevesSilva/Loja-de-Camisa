@@ -20,14 +20,11 @@ public class CreateCarServlet extends HttpServlet {
         String email = req.getParameter("email_cad");
         String senha = req.getParameter( "senha_cad");
 
-        Cadastro cadastro = new Cadastro();
-        cadastro.setName(nome);
-        cadastro.setSobrenome(sobrenome);
-        cadastro.setEmail(email);
-        cadastro.setSenha(senha);
+        Cadastro cadastro = new Cadastro(nome,sobrenome,email,senha);
+
 
         new CadastroDao().createaccount(cadastro);
 
-        req.getRequestDispatcher("index.html").forward(req, resp);
+        resp.sendRedirect("find-all-Cadastro");
     }
 }
