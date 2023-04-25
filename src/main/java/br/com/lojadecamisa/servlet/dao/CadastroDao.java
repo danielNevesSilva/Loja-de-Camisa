@@ -39,11 +39,12 @@ public class CadastroDao {
             List<Cadastro> cadastros = new ArrayList<>();
 
             while (resultSet.next()) {
+                String id = resultSet.getString("ID_ADM");
                 String nome = resultSet.getString("NOME");
                 String sobrenome = resultSet.getString("SOBRENOME");
                 String email = resultSet.getString("EMAIL");
                 String senha = resultSet.getString("SENHA");
-                Cadastro cadastro = new Cadastro(nome, sobrenome, email, senha);
+                Cadastro cadastro = new Cadastro(id,nome, sobrenome, email, senha);
                 cadastros.add(cadastro);
             }
             System.out.println("Sucesso in select * adminitralção");
@@ -55,5 +56,29 @@ public class CadastroDao {
             return Collections.emptyList();
         }
 
+    }
+
+    public void deleteCadastroById(String CadastroId) {
+        String SQL = "DELETE ADMINISTRADOR WHERE ID_ADM = ?";
+
+        try {
+
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+            preparedStatement.setString(1, CadastroId);
+            preparedStatement.execute();
+
+            System.out.println("success on delete name with id: " + CadastroId);
+
+            connection.close();
+
+        } catch (Exception e) {
+
+            System.out.println("fail in database connection");
+
+        }
     }
 }
