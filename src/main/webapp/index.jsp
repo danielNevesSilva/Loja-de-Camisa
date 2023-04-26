@@ -17,7 +17,7 @@
         
         <a href="">Promoções</a></P>
         <a href="">Camisas</a> </p>
-        <a href="./index.html">Cadastre-se</a>
+        <a href="./index.jsp">Cadastre-se</a>
         <a href="./login.html">Contato</a>
         
     </div>

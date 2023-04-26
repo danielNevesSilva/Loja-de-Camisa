@@ -4,7 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22283af8-1d0f-44be-9454-5043ea1ad2f8" name="Changes" comment="" />
+    <list default="true" id="22283af8-1d0f-44be-9454-5043ea1ad2f8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../AppData/Local/Yarn/Cache/v6/npm-clone-1.0.4-da309cc263df15994c688ca902179ca3c7cd7c7e-integrity/node_modules/clone/clone.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppData/Local/Yarn/Cache/v6/npm-clone-2.1.2-1b7f4b9f591f1e8f83670401600345a02887435f-integrity/node_modules/clone/clone.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppData/Local/Yarn/Cache/v6/npm-safe-json-stringify-1.2.0-356e44bc98f1f93ce45df14bcd7c01cda86e0afd-integrity/node_modules/safe-json-stringify/.idea/safe-json-stringify.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppData/Local/npm-cache/_npx/249ca9fcd30c476a/node_modules/clone/clone.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppData/Local/npm-cache/_npx/249ca9fcd30c476a/node_modules/defaults/node_modules/clone/clone.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppData/Local/npm-cache/_npx/249ca9fcd30c476a/node_modules/safe-json-stringify/.idea/safe-json-stringify.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppData/Local/npm-cache/_npx/7930a8670f922cdb/node_modules/clone/clone.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppData/Local/npm-cache/_npx/dea611a43221eddd/node_modules/clone/clone.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppData/Roaming/npm/node_modules/expo-cli/node_modules/clone/clone.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppData/Roaming/npm/node_modules/expo-cli/node_modules/json-schema-deref-sync/node_modules/clone/clone.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppData/Roaming/npm/node_modules/expo-cli/node_modules/safe-json-stringify/.idea/safe-json-stringify.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppData/Roaming/npm/node_modules/expo-cli/node_modules/source-map-loader/node_modules/iconv-lite/.idea/iconv-lite.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Downloads/car-store-guide-main/car-store-guide-main/.idea/car-store-guide-main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IdeaProjects/.idea/IdeaProjects.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Loja-de-Camisa.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OneDrive/Área de Trabalho/IdeaProjects/.idea/IdeaProjects.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OneDrive/Área de Trabalho/Reactexpo/primevideo/node_modules/clone/clone.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OneDrive/Área de Trabalho/Reactexpo/primevideo/node_modules/defaults/node_modules/clone/clone.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OneDrive/Área de Trabalho/Reactexpo/primevideo/node_modules/safe-json-stringify/.idea/safe-json-stringify.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OneDrive/Área de Trabalho/Reactexpo/primevideo/primevideo/node_modules/clone/clone.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OneDrive/Área de Trabalho/Reactexpo/primevideo/primevideo/node_modules/defaults/node_modules/clone/clone.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OneDrive/Área de Trabalho/Reactexpo/primevideo/primevideo/node_modules/safe-json-stringify/.idea/safe-json-stringify.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Discord2/src/pages/home/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Discord2/src/pages/home/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lojadecamisa/servlet/dao/CadastroDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/lojadecamisa/servlet/dao/CadastroDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lojadecamisa/servlet/servlet/CreateCarServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/lojadecamisa/servlet/servlet/CreateCarServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Dashboard.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/produto.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/produto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/lojadecamisa/servlet/dao/CadastroDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/lojadecamisa/servlet/dao/CadastroDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/lojadecamisa/servlet/servlet/CreateCarServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/lojadecamisa/servlet/servlet/CreateCarServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/SESSIONS.ser" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/SESSIONS.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/Dashboard_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/Dashboard_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/Dashboard_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/Dashboard_jsp.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +77,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Casa/Documents/Loja-de-Camisa",
+    "last_opened_file_path": "C:/Users/danie/Loja-de-Camisa",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
