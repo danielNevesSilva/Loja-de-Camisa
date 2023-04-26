@@ -83,7 +83,7 @@ public class CadastroDao {
 
     public void updateCadastro(Cadastro cadastro) {
 
-        String SQL ="UPDATE ADMINISTRADOR SET NOME = ?, SOBRENOME = ?, EMAIL = ?, SENHA = ? WHERE ID_ADM = ?  ";
+        String SQL ="UPDATE ADMINISTRADOR SET NOME = ?, SOBRENOME = ? WHERE ID_ADM = ?  ";
 
         try {
 
@@ -95,8 +95,7 @@ public class CadastroDao {
 
             preparedStatement.setString(1, cadastro.getNome());
             preparedStatement.setString(2, cadastro.getSobrenome());
-            preparedStatement.setString(3,cadastro.getEmail());
-            preparedStatement.setString(4,cadastro.getSenha());
+
             preparedStatement.setString(5, cadastro.getId());
             preparedStatement.execute();
 
