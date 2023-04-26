@@ -14,22 +14,21 @@
             <th>Nome</th>
             <th>Sobrenome</th>
             <th>Email</th>
-            <th>Senha</th>
+
         </tr>
         <c:forEach var="Cadastro" items="${Cadastros}">
             <tr>
                 <td></td>
-                 <td>${Cadastro.id}</td>
+                <td>${Cadastro.id}</td>
                 <td>${Cadastro.nome}</td>
                 <td>${Cadastro.sobrenome}</td>
                 <td>${Cadastro.email}</td>
-                <td>${Cadastro.senha}</td>
                 <td>
                  <form action="/delete-cadastro" method="post">
            <input type="hidden" id="id" name="id" value="${Cadastro.id}">
                                     <button type="submit">Delete</button>
                                     <span> | </span>
-<a href="index.jsp?id=${Cadastro.id}&name=${Cadastro.nome}&sobrenome=${Cadastro.sobrenome}&email=${Cadastro.email}&senha=${Cadastro.senha}">Update</a>
+<a href="index.jsp?=id${Cadastro.id}&nome=${Cadastro.nome}&sobrenome=${Cadastro.sobrenome}&email=${Cadastro.email}&senha=${Cadastro.senha}">Update</a>
                                     </form>
                                   </td>
             </tr>

@@ -38,24 +38,24 @@
 
                     <p>
                         <label for="nome_cad">Nome</label>
-                        <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="  nome" />
+                        <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="  nome"  value="${param.nome}"/>
                     </p>
 
                     <p>
                         <label for="nome_cad">Sobrenome</label>
                         <input id="sobrenome_cad" name="sobrenome_cad" required="required" type="text"
-                            placeholder="  sobrenome" />
+                            placeholder="  sobrenome"  value="${param.sobrenome}" />
                     </p>
 
                     <p>
                         <label for="email_cad">E-mail</label>
                         <input id="email_cad" name="email_cad" required="required" type="email"
-                            placeholder="  contato@htmlecsspro.com" />
+                            placeholder="  contato@htmlecsspro.com"  value="${param.email}" />
                     </p>
 
                     <p>
                         <label for="senha_cad">Senha</label>
-                        <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="  ********" />
+                        <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="  ********"  value="${param.senha}" />
                     </p>
                     <p>
                         <label for="senha_cad">Confirme senha</label>
@@ -63,10 +63,9 @@
                             placeholder="  ********" />
                     </p>
 
-                    
-                        
+
+                    <input type="hidden" id="id" name="id" value="${param.id}">
                         <button class="botao-cadastro" input type="submit" value="Cadastrar" > Cadastrar</button>
-                
 
                 </form>
 

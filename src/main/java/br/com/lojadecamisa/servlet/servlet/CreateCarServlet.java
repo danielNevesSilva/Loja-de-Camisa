@@ -24,6 +24,14 @@ public class CreateCarServlet extends HttpServlet {
             CadastroDao cadastroDao = new CadastroDao();
             Cadastro cadastro = new Cadastro(id, nome, sobrenome, email, senha);
 
+        if (id.isBlank()) {
+
+            cadastroDao.createaccount(cadastro);
+
+        } else {
+
+            cadastroDao.updateCadastro(cadastro);
+        }
 
         resp.sendRedirect("find-all-Cadastro");
 
