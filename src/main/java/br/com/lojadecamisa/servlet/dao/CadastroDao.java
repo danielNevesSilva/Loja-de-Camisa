@@ -78,6 +78,36 @@ public class CadastroDao {
         } catch (Exception e) {
 
             System.out.println("fail in database connection");
+        }
+    }
+
+    public void updateCadastro(Cadastro cadastro) {
+
+        String SQL ="UPDATE ADMINISTRADOR SET NOME = ?, SOBRENOME = ?, EMAIL = ?, SENHA = ? WHERE ID_ADM = ?  ";
+
+        try {
+
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1, cadastro.getNome());
+            preparedStatement.setString(2, cadastro.getSobrenome());
+            preparedStatement.setString(3,cadastro.getEmail());
+            preparedStatement.setString(4,cadastro.getSenha());
+            preparedStatement.setString(5, cadastro.getId());
+            preparedStatement.execute();
+
+            System.out.println("success in update ADMINISTRADOR");
+
+            connection.close();
+
+        } catch (Exception e) {
+
+            System.out.println("fail in database connection");
+            System.out.println("Error: " + e.getMessage());
 
         }
     }

@@ -15,16 +15,17 @@ public class CreateCarServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        String nome = req.getParameter("nome_cad");
-        String sobrenome = req.getParameter("sobrenome_cad");
-        String email = req.getParameter("email_cad");
-        String senha = req.getParameter( "senha_cad");
+            String id = req.getParameter("id");
+            String nome = req.getParameter("nome_cad");
+            String sobrenome = req.getParameter("sobrenome_cad");
+            String email = req.getParameter("email_cad");
+            String senha = req.getParameter("senha_cad");
 
-        Cadastro cadastro = new Cadastro(nome,sobrenome,email,senha);
+            CadastroDao cadastroDao = new CadastroDao();
+            Cadastro cadastro = new Cadastro(id, nome, sobrenome, email, senha);
 
-
-        new CadastroDao().createaccount(cadastro);
 
         resp.sendRedirect("find-all-Cadastro");
+
     }
 }
