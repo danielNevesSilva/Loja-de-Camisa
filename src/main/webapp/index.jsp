@@ -15,10 +15,10 @@
     <a href="">logo</a>
     <div class="menu">
         
-        <a href="">Promoções</a></P>
+        <a href="promocao.html">Promoções</a></P>
         <a href="">Camisas</a> </p>
-        <a href="./index.jsp">Cadastre-se</a>
-        <a href="./login.html">Contato</a>
+        <a href="index.jsp">Cadastre-se</a>
+        <a href="">Contato</a>
         
     </div>
 
