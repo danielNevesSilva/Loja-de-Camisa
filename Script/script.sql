@@ -7,7 +7,7 @@ id_adm int primary key not null auto_increment,
 nome varchar(40),
 sobrenome varchar(100),
 email varchar(100),
-senha varchar(10),
+senha varchar(10)
 );
 
 create table produto(
