@@ -7,6 +7,8 @@ public class Cadastro {
     private String email;
     private String senha;
 
+    private String imagem;
+
     private  String Id;
 
     public Cadastro(String Id, String nome, String sobrenome, String email, String senha){
@@ -21,6 +23,15 @@ public class Cadastro {
         this.sobrenome = sobrenome;
         this.email = email;
         this.senha = senha;
+    }
+
+    public Cadastro(String nome, String sobrenome, String email, String senha, String imagem, String id) {
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.email = email;
+        this.senha = senha;
+        this.imagem = imagem;
+        Id = id;
     }
 
     public Cadastro() {
@@ -45,6 +56,7 @@ public class Cadastro {
     public  String getId(){
         return Id;
     }
+    public String getImagem(){ return imagem; }
 }
 
 

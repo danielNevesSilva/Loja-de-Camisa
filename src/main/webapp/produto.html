@@ -38,12 +38,15 @@
 
 <div class= "cadastro">
     <div class="informacoes">
+
+        <form action="/create-image" method="post" enctype="multipart/form-data">
+
         <p>Imagem:</p>
         <a href="./login.html"><img src="./Loja-de-Camisa/src/imagens/foto-login.webp" alt="foto-login"></a>
         <p>Ano da camisa:</p>
-        <input type="month">
+        <input  id="ano_camisa" name="ano_camisa" required="required" value="${param.ano_camisa" type="month">
         <p>Nome da camisa:</p>
-        <input type="text">
+        <input id="nome_camisa" name="nome_camisa" required="required" value="${param.nome_camisa" type="text">
 
         <p>Tamanho do produto:</p>
 
@@ -60,11 +63,10 @@
         </div>
 
         <p>Valor do produto:</p>
-        <input type="number">
+        <input id="valor_produto" name="valor_produto" required="required" value="${param.valor_camisa" type="number">
         <p>Quantidade</p>
-        <input type="number">
-        <p>Mais detalhes</p>
-        <textarea class="area"></textarea>
+        <input id="quantidade" name="quantidade" required="required" type="number">
+
     </div>
 
     <div class="descricao">
@@ -72,6 +74,11 @@
         <p>Nome:</p>
         <p>Tamanho:</p>
         <p>Preço R$:</p>
+
+
+            Selecione uma imagem para enviar: <input type="file" name="imagem"><br>
+            <input type="submit" value="Enviar">
+        </form>
 
         <div>
         <button class="confirmar"> Confirmar sua cadastro</button>

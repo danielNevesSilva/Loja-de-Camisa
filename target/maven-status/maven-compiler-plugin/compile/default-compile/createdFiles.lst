@@ -1,5 +1,6 @@
+br\com\lojadecamisa\servlet\servlet\CreateImagemServelet.class
 br\com\lojadecamisa\servlet\model\Cadastro.class
 br\com\lojadecamisa\servlet\servlet\ListCadastroServlet.class
-br\com\lojadecamisa\servlet\servlet\CreateCarServlet.class
 br\com\lojadecamisa\servlet\dao\CadastroDao.class
 br\com\lojadecamisa\servlet\servlet\DeleteCadastroServlet.class
+br\com\lojadecamisa\servlet\servlet\CreateCadastroServlet.class

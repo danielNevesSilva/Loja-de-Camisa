@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet ("/create-account")
-public class CreateCarServlet extends HttpServlet {
+public class CreateCadastroServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -36,4 +36,9 @@ public class CreateCarServlet extends HttpServlet {
         resp.sendRedirect("find-all-Cadastro");
 
     }
+
+
+
+
+
 }
