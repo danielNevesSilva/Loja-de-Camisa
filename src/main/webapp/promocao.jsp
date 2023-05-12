@@ -42,7 +42,7 @@
         <div class="principal">
         <div class="primeiro">
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="img/Camisa%20do%20São%20Paulo.webp" alt="camisetaTime">
+                <img class="card-img-top" src="img/1683927405453-Mantosagrado.webp" alt="camisetaTime">
                 <div class="card-body">
                     <p>Camisa São Paulo |</p>
                     <p>23/24 S/ Nº Jogador</p>

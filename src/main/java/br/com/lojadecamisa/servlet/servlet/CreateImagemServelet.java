@@ -10,6 +10,7 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
@@ -23,7 +24,7 @@ import static org.apache.commons.fileupload.servlet.ServletFileUpload.isMultipar
 
 
 @WebServlet("/create-image")
-public class CreateImagemServelet {
+public class CreateImagemServelet extends HttpServlet {
 
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -40,6 +41,9 @@ public class CreateImagemServelet {
 
         CadastroDao cadastroDao = new CadastroDao();
         Cadastro cadastro = new Cadastro("0", ano_camisa, nome_camisa, valor_produto, quantidade, name);
+
+        cadastroDao.createImagem(cadastro);
+        resp.sendRedirect("promocao.jsp");
 
     }
 

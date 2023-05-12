@@ -111,7 +111,34 @@ public class CadastroDao {
         }
     }
 
+    public void createImagem(Cadastro cadastro) {
 
+        String SQL = "INSERT INTO PRODUTO  (IMAGEMCAMISA, NOMECAMISA, NOMEANO, TAMANHO, PRECO) VALUES (?, ?, ?, ?, ?)";
 
+        try {
 
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1, cadastro.getAnoCamisa());
+            preparedStatement.setString(2, cadastro.getNomeCamisa());
+            preparedStatement.setString(3, cadastro.getValorProduto());
+            preparedStatement.setString(4, cadastro.getQuantidade());
+            preparedStatement.setString(5, cadastro.getImagem());
+            preparedStatement.executeUpdate();
+
+            System.out.println("success in update ADMINISTRADOR");
+
+            connection.close();
+
+        } catch (Exception e) {
+
+            System.out.println("fail in database connection");
+            System.out.println("Error: " + e.getMessage());
+
+        }
+    }
 }
