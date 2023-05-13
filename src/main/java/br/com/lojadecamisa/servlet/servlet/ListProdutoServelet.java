@@ -9,18 +9,18 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.SQLException;
 import java.util.List;
 
+@WebServlet("/find-all-produtos")
+public class ListProdutoServelet extends HttpServlet {
 
-public class ListCadastroServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        List<Cadastro> produtos = new CadastroDao().selectProdutos();
 
-        List<Cadastro> Cadastros = new CadastroDao().findAllCadastro();
+        req.setAttribute("produtos", produtos);
 
-        req.setAttribute("Cadastros", Cadastros);
+        req.getRequestDispatcher("promocao.jsp").forward(req,resp);
 
-        req.getRequestDispatcher("Dashboard.jsp").forward(req, resp);
     }
 }

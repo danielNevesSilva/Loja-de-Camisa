@@ -44,14 +44,14 @@ public class CadastroDao {
                 String sobrenome = resultSet.getString("SOBRENOME");
                 String email = resultSet.getString("EMAIL");
                 String senha = resultSet.getString("SENHA");
-                Cadastro cadastro = new Cadastro(id,nome, sobrenome, email, senha);
+                Cadastro cadastro = new Cadastro(id, nome, sobrenome, email, senha);
                 cadastros.add(cadastro);
             }
             System.out.println("Sucesso in select * adminitralção");
             connection.close();
 
             return cadastros;
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println("Falha na connection");
             return Collections.emptyList();
         }
@@ -83,7 +83,7 @@ public class CadastroDao {
 
     public void updateCadastro(Cadastro cadastro) {
 
-        String SQL ="UPDATE ADMINISTRADOR SET NOME = ?, SOBRENOME = ? WHERE ID_ADM = ?  ";
+        String SQL = "UPDATE ADMINISTRADOR SET NOME = ?, SOBRENOME = ? WHERE ID_ADM = ?  ";
 
         try {
 
@@ -111,10 +111,10 @@ public class CadastroDao {
         }
     }
 
+
     public void createImagem(Cadastro cadastro) {
 
-        String SQL = "INSERT INTO PRODUTO  (IMAGEMCAMISA, NOMECAMISA, NOMEANO, TAMANHO, PRECO) VALUES (?, ?, ?, ?, ?)";
-
+        String SQL = "INSERT INTO PRODUTO  (ANOCAMISA, NOMECAMISA, TAMANHO, PRECO, QUANTIDADE, IMAGEMCAMISA) VALUES (?, ?, ?, ?, ?, ?)";
         try {
 
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
@@ -125,12 +125,13 @@ public class CadastroDao {
 
             preparedStatement.setString(1, cadastro.getAnoCamisa());
             preparedStatement.setString(2, cadastro.getNomeCamisa());
-            preparedStatement.setString(3, cadastro.getValorProduto());
-            preparedStatement.setString(4, cadastro.getQuantidade());
-            preparedStatement.setString(5, cadastro.getImagem());
+            preparedStatement.setString(3, cadastro.getTamanho());
+            preparedStatement.setString(4, cadastro.getValorProduto());
+            preparedStatement.setString(5, cadastro.getQuantidade());
+            preparedStatement.setString(6, cadastro.getImagem());
             preparedStatement.executeUpdate();
 
-            System.out.println("success in update ADMINISTRADOR");
+            System.out.println("success in update PRODUTO");
 
             connection.close();
 
@@ -140,5 +141,38 @@ public class CadastroDao {
             System.out.println("Error: " + e.getMessage());
 
         }
+    }
+
+    public List<Cadastro> selectProdutos() {
+
+        String SQL = "SELECT * FROM PRODUTO";
+
+        try (Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+             ResultSet resultSet = preparedStatement.executeQuery()) {
+            List<Cadastro> produto = new ArrayList<>();
+
+
+            while (resultSet.next()) {
+                String id = resultSet.getString("ID");
+                String anoCamisa = resultSet.getString("ANOCAMISA");
+                String nomeCamisa = resultSet.getString("NOMECAMISA");
+                String tamanho = resultSet.getString("TAMANHO");
+                String preco = resultSet.getString("PRECO");
+                String quantidade = resultSet.getString("QUANTIDADE");
+                String imagem = resultSet.getString("IMAGEMCAMISA");
+
+                Cadastro cadastro = new Cadastro(id, anoCamisa, nomeCamisa, tamanho, preco, quantidade, imagem);
+                produto.add(cadastro);
+            }
+            System.out.println("Sucesso in select * Produto");
+            connection.close();
+
+            return produto;
+        } catch (Exception e) {
+            System.out.println("Falha na connection");
+            return Collections.emptyList();
+        }
+
     }
 }

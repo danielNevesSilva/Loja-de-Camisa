@@ -53,13 +53,23 @@
               </div>
 
               <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="img/Camisa%20do%20São%20Paulo.webp" alt="camisetaTime">
-                <div class="card-body">
-                    <p>Camisa São Paulo |</p>
-                    <p>23/24 S/ Nº Jogador</p>
-                    <p>Adidas Masculino</p>
-                    <p class="frete">Frete Grátis</p>
-                    <h4 class="valor">R$ 429,90</h4>
+            <c:forEach var="produto" items="${produtos}">
+               <tr>
+                  <td></td>
+                  <td>${produto.id}</td>
+                  <td>${produto.nome}</td>
+                  <td>${produto.descricao}</td>
+                  <td>${produto.preco}</td>
+                  <td>
+
+                     <a href="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${produto.image}">
+                        <img style="width: 100px" src="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${produto.image}" alt="...">
+                     </a>
+                  </td>
+               </tr>
+            </c:forEach>
+
+
                 </div>
               </div>
 

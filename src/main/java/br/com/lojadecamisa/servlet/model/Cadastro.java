@@ -15,13 +15,29 @@ public class Cadastro {
     private String nomeCamisa;
     private String valorProduto;
     private String quantidade;
+    private String tamanho;
+
+    private String imagePath;
 
 
+    public String getImageUrl() {
+        return this.imagePath + "/" + this.imagem;
+    }
 
-    public Cadastro(String id, String anoCamisa, String nomeCamisa, String valorProduto, String quantidade, String imagem) {
+
+    public String getTamanho() {
+        return tamanho;
+    }
+
+    public void setTamanho(String tamanho) {
+        this.tamanho = tamanho;
+    }
+
+    public Cadastro(String id, String anoCamisa, String nomeCamisa,String tamanho ,String valorProduto, String quantidade, String imagem) {
         this.Id = id;
         this.anoCamisa = anoCamisa;
         this.nomeCamisa = nomeCamisa;
+        this.tamanho= tamanho;
         this.valorProduto = valorProduto;
         this.quantidade = quantidade;
         this.imagem = imagem;

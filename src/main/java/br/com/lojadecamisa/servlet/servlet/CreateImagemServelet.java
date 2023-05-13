@@ -26,23 +26,21 @@ import static org.apache.commons.fileupload.servlet.ServletFileUpload.isMultipar
 @WebServlet("/create-image")
 public class CreateImagemServelet extends HttpServlet {
 
-
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         Map<String, String> parameters = uploadImage(req);
 
+        String ano_camisa = parameters.get("ano_camisa");
+        String nome_camisa = parameters.get("nome_camisa");
+        String tamanho = parameters.get("tamanho");
+        String valor_produto = parameters.get("valor_produto");
+        String quantidade = parameters.get("quantidade");
+        String imagem = parameters.get("imagem");
 
-        String ano_camisa = req.getParameter("ano_camisa");
-        String nome_camisa = req.getParameter("nome_camisa");
-        String valor_produto = req.getParameter("valor_produto");
-        String quantidade = req.getParameter("quantidade");
-        String name = req.getParameter("name");
-
-
+        Cadastro cadastro = new Cadastro("0", ano_camisa, nome_camisa,tamanho ,valor_produto, quantidade, imagem );
         CadastroDao cadastroDao = new CadastroDao();
-        Cadastro cadastro = new Cadastro("0", ano_camisa, nome_camisa, valor_produto, quantidade, name);
-
         cadastroDao.createImagem(cadastro);
+
         resp.sendRedirect("promocao.jsp");
 
     }
@@ -67,7 +65,7 @@ public class CreateImagemServelet extends HttpServlet {
 
             } catch (Exception ex) {
 
-                requestParameters.put("image", "img/default-car.jpg");
+                requestParameters.put("image", "img/default-produto.jpg");
             }
         }
         return requestParameters;
@@ -84,7 +82,6 @@ public class CreateImagemServelet extends HttpServlet {
             requestParameters.put("image", "img/".concat(fileName));
         }
     }
-
     private String processUploadedFile(FileItem fileItem) throws Exception {
         Long currentTime = new Date().getTime();
         String fileName = currentTime.toString().concat("-").concat(fileItem.getName().replace(" ", ""));
@@ -92,7 +89,6 @@ public class CreateImagemServelet extends HttpServlet {
         fileItem.write(new File(filePath));
         return fileName;
     }
-
 
 
 
