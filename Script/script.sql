@@ -12,7 +12,7 @@ senha varchar(10)
 
 create table produto(
 id_produto int primary key not null auto_increment,
-imagemCamisa Varbinary (max)
+IMAGE VARCHAR(255),
 nomeCamisa varchar(100),
 nomeAno varchar(100),
 tamanho char(2),
