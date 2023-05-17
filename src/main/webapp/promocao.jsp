@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promoção</title>
+    <title>Ofertas</title>
 
    <link rel="stylesheet" href="promocao.css">
 
@@ -20,7 +20,7 @@
         </div>
 
        <div class="direto">
-        <a href="promocao.html">Promoções</a>
+        <a href="promocao.html">Ofertas</a>
         <a href="">Camisas</a>
         <a href="index.jsp">Cadastre-se</a>
         <a href="">Contato</a>
@@ -38,7 +38,7 @@
 
         <div class="promocao">
 
-        <h2>Promoções</h2>
+        <h2>Ofertas</h2>
         </div>
         <div class="principal">
         <div class="primeiro">
@@ -64,13 +64,13 @@
          <c:forEach var="Produto" items="${Produtos}">
             <tr>
                 <td></td>
-                <td>${Produto.ano_camisa}</td>
-                <td>${Produto.nome_camisa}</td>
+                <td>${Produto.anoCamisa}</td>
+                <td>${Produto.nomeCamisa}</td>
                 <td>${Produto.tamanho}</td>
-                <td>${Produto.valor_produto}</td>
+                <td>${Produto.valorProduto}</td>
                <td>
                 <a href="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${Produto.image}">
-          <img style="width: 100px" src="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${Produto.image}" alt="...">
+          <img style="width: 200px" src="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${Produto.image}" alt="...">
                                    </a>
                </td>
             </tr>

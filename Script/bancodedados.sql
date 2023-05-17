@@ -14,5 +14,5 @@ nomecamisa varchar(100),
 tamanho char(2),
 preco decimal(5,2),
 quantidade varchar(4),
-imagemcamisa varchar(255)
+image varchar(255)
 );
