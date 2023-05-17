@@ -13,10 +13,10 @@ import java.sql.SQLException;
 import java.util.List;
 
 
+@WebServlet("/find-all-Cadastro")
 public class ListCadastroServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
         List<Cadastro> Cadastros = new CadastroDao().findAllCadastro();
 
         req.setAttribute("Cadastros", Cadastros);

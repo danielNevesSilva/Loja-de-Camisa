@@ -53,21 +53,29 @@
               </div>
 
               <div class="card" style="width: 18rem;">
-            <c:forEach var="produto" items="${produtos}">
-               <tr>
-                  <td></td>
-                  <td>${produto.id}</td>
-                  <td>${produto.nome}</td>
-                  <td>${produto.descricao}</td>
-                  <td>${produto.preco}</td>
-                  <td>
+ <table>
+              <tr>
+                          <th>ANOCAMISA</th>
+                          <th>nomeCamia</th>
+                          <th>tamanho</th>
 
-                     <a href="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${produto.image}">
-                        <img style="width: 100px" src="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${produto.image}" alt="...">
-                     </a>
-                  </td>
-               </tr>
-            </c:forEach>
+                      </tr>
+         <c:forEach var="produto" items="${produtos}">
+            <tr>
+
+               <td>${produto.ano_camisa}</td>
+                <td>${produto.nome_camisa}</td>
+                <td>${produto.tamanho}</td>
+                <td>${produto.valor_produto}</td>
+
+               <td>
+                   <a href="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${produto.image}">
+     <img style="width: 100px" src="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${produto.image}" alt="...">
+                  </a>
+               </td>
+            </tr>
+         </c:forEach>
+ </table>
 
 
                 </div>

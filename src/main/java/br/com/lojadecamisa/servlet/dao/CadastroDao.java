@@ -1,6 +1,7 @@
 package br.com.lojadecamisa.servlet.dao;
 
 import br.com.lojadecamisa.servlet.model.Cadastro;
+import br.com.lojadecamisa.servlet.model.Produto;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -33,6 +34,7 @@ public class CadastroDao {
     public List<Cadastro> findAllCadastro() {
 
         String sql = "SELECT * FROM ADMINISTRADOR";
+
         try (Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
              PreparedStatement preparedStatement = connection.prepareStatement(sql);
              ResultSet resultSet = preparedStatement.executeQuery()) {
@@ -112,7 +114,7 @@ public class CadastroDao {
     }
 
 
-    public void createImagem(Cadastro cadastro) {
+    public void createImagem(Produto produto) {
 
         String SQL = "INSERT INTO PRODUTO  (ANOCAMISA, NOMECAMISA, TAMANHO, PRECO, QUANTIDADE, IMAGEMCAMISA) VALUES (?, ?, ?, ?, ?, ?)";
         try {
@@ -123,15 +125,15 @@ public class CadastroDao {
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
-            preparedStatement.setString(1, cadastro.getAnoCamisa());
-            preparedStatement.setString(2, cadastro.getNomeCamisa());
-            preparedStatement.setString(3, cadastro.getTamanho());
-            preparedStatement.setString(4, cadastro.getValorProduto());
-            preparedStatement.setString(5, cadastro.getQuantidade());
-            preparedStatement.setString(6, cadastro.getImagem());
+            preparedStatement.setString(1, produto.getAnoCamisa());
+            preparedStatement.setString(2, produto.getNomeCamisa());
+            preparedStatement.setString(3, produto.getTamanho());
+            preparedStatement.setString(4, produto.getValorProduto());
+            preparedStatement.setString(5, produto.getQuantidade());
+            preparedStatement.setString(6, produto.getImage());
             preparedStatement.executeUpdate();
 
-            System.out.println("success in update PRODUTO");
+            System.out.println("success in insert PRODUTO");
 
             connection.close();
 
@@ -143,27 +145,29 @@ public class CadastroDao {
         }
     }
 
-    public List<Cadastro> selectProdutos() {
+    public List<Produto> selectProdutos() {
 
         String SQL = "SELECT * FROM PRODUTO";
 
         try (Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
              PreparedStatement preparedStatement = connection.prepareStatement(SQL);
              ResultSet resultSet = preparedStatement.executeQuery()) {
-            List<Cadastro> produto = new ArrayList<>();
+
+            List<Produto> produto = new ArrayList<>();
 
 
             while (resultSet.next()) {
-                String id = resultSet.getString("ID");
+                String id = resultSet.getString("ID_PRODUTO");
                 String anoCamisa = resultSet.getString("ANOCAMISA");
                 String nomeCamisa = resultSet.getString("NOMECAMISA");
                 String tamanho = resultSet.getString("TAMANHO");
                 String preco = resultSet.getString("PRECO");
                 String quantidade = resultSet.getString("QUANTIDADE");
-                String imagem = resultSet.getString("IMAGEMCAMISA");
+                String image = resultSet.getString("IMAGEMCAMISA");
 
-                Cadastro cadastro = new Cadastro(id, anoCamisa, nomeCamisa, tamanho, preco, quantidade, imagem);
-                produto.add(cadastro);
+                Produto produtos = new Produto(id, anoCamisa, nomeCamisa, tamanho, preco, quantidade, image);
+
+                produto.add(produtos);
             }
             System.out.println("Sucesso in select * Produto");
             connection.close();

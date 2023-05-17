@@ -4,6 +4,7 @@ import br.com.lojadecamisa.servlet.dao.CadastroDao;
 import br.com.lojadecamisa.servlet.model.Cadastro;
 
 
+import br.com.lojadecamisa.servlet.model.Produto;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
@@ -30,18 +31,19 @@ public class CreateImagemServelet extends HttpServlet {
 
         Map<String, String> parameters = uploadImage(req);
 
+        String imagem = parameters.get("image");
         String ano_camisa = parameters.get("ano_camisa");
         String nome_camisa = parameters.get("nome_camisa");
         String tamanho = parameters.get("tamanho");
         String valor_produto = parameters.get("valor_produto");
         String quantidade = parameters.get("quantidade");
-        String imagem = parameters.get("imagem");
 
-        Cadastro cadastro = new Cadastro("0", ano_camisa, nome_camisa,tamanho ,valor_produto, quantidade, imagem );
-        CadastroDao cadastroDao = new CadastroDao();
-        cadastroDao.createImagem(cadastro);
 
-        resp.sendRedirect("promocao.jsp");
+        Produto produto = new Produto("0", ano_camisa, nome_camisa,tamanho ,valor_produto, quantidade, imagem );
+
+        new CadastroDao().createImagem(produto);
+
+        resp.sendRedirect("/find-all-produtos");
 
     }
 

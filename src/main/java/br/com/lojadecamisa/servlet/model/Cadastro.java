@@ -7,41 +7,7 @@ public class Cadastro {
     private String email;
     private String senha;
 
-    private String imagem;
-
     private  String Id;
-
-    private String anoCamisa;
-    private String nomeCamisa;
-    private String valorProduto;
-    private String quantidade;
-    private String tamanho;
-
-    private String imagePath;
-
-
-    public String getImageUrl() {
-        return this.imagePath + "/" + this.imagem;
-    }
-
-
-    public String getTamanho() {
-        return tamanho;
-    }
-
-    public void setTamanho(String tamanho) {
-        this.tamanho = tamanho;
-    }
-
-    public Cadastro(String id, String anoCamisa, String nomeCamisa,String tamanho ,String valorProduto, String quantidade, String imagem) {
-        this.Id = id;
-        this.anoCamisa = anoCamisa;
-        this.nomeCamisa = nomeCamisa;
-        this.tamanho= tamanho;
-        this.valorProduto = valorProduto;
-        this.quantidade = quantidade;
-        this.imagem = imagem;
-    }
 
 
     public Cadastro(String id, String nome, String sobrenome, String email, String senha) {
@@ -50,39 +16,6 @@ public class Cadastro {
         this.sobrenome = sobrenome;
         this.email = email;
         this.senha = senha;
-    }
-
-
-    public String getAnoCamisa() {
-        return anoCamisa;
-    }
-
-    public void setAnoCamisa(String anoCamisa) {
-        this.anoCamisa = anoCamisa;
-    }
-
-    public String getNomeCamisa() {
-        return nomeCamisa;
-    }
-
-    public void setNomeCamisa(String nomeCamisa) {
-        this.nomeCamisa = nomeCamisa;
-    }
-
-    public String getValorProduto() {
-        return valorProduto;
-    }
-
-    public void setValorProduto(String valorProduto) {
-        this.valorProduto = valorProduto;
-    }
-
-    public String getQuantidade() {
-        return quantidade;
-    }
-
-    public void setQuantidade(String quantidade) {
-        this.quantidade = quantidade;
     }
 
     public String getNome() {
@@ -103,7 +36,6 @@ public class Cadastro {
     public  String getId(){
         return Id;
     }
-    public String getImagem(){ return imagem; }
 }
 
 
