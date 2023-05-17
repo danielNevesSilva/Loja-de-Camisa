@@ -116,7 +116,7 @@ public class CadastroDao {
 
     public void createImagem(Produto produto) {
 
-        String SQL = "INSERT INTO PRODUTO  (ANOCAMISA, NOMECAMISA, TAMANHO, PRECO, QUANTIDADE, IMAGEMCAMISA) VALUES (?, ?, ?, ?, ?, ?)";
+        String SQL = "INSERT INTO PRODUTO  (ANOCAMISA, NOMECAMISA, TAMANHO, PRECO, QUANTIDADE, IMAGE) VALUES (?, ?, ?, ?, ?, ?)";
         try {
 
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
@@ -163,7 +163,7 @@ public class CadastroDao {
                 String tamanho = resultSet.getString("TAMANHO");
                 String preco = resultSet.getString("PRECO");
                 String quantidade = resultSet.getString("QUANTIDADE");
-                String image = resultSet.getString("IMAGEMCAMISA");
+                String image = resultSet.getString("IMAGE");
 
                 Produto produtos = new Produto(id, anoCamisa, nomeCamisa, tamanho, preco, quantidade, image);
 

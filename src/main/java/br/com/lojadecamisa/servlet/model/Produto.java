@@ -20,14 +20,14 @@ public class Produto {
     private String quantidade;
     private String tamanho;
 
-    public Produto(String id, String anoCamisa, String nomeCamisa,String tamanho ,String valorProduto, String quantidade, String imagem) {
+    public Produto(String id, String anoCamisa, String nomeCamisa,String tamanho ,String valorProduto, String quantidade, String image) {
         this.Id = id;
         this.anoCamisa = anoCamisa;
         this.nomeCamisa = nomeCamisa;
         this.tamanho= tamanho;
         this.valorProduto = valorProduto;
         this.quantidade = quantidade;
-        this.image = imagem;
+        this.image = image;
     }
 
 

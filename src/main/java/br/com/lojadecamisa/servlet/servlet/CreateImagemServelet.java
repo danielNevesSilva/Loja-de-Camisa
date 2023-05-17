@@ -31,7 +31,7 @@ public class CreateImagemServelet extends HttpServlet {
 
         Map<String, String> parameters = uploadImage(req);
 
-        String imagem = parameters.get("image");
+        String image = parameters.get("image");
         String ano_camisa = parameters.get("ano_camisa");
         String nome_camisa = parameters.get("nome_camisa");
         String tamanho = parameters.get("tamanho");
@@ -39,7 +39,7 @@ public class CreateImagemServelet extends HttpServlet {
         String quantidade = parameters.get("quantidade");
 
 
-        Produto produto = new Produto("0", ano_camisa, nome_camisa,tamanho ,valor_produto, quantidade, imagem );
+        Produto produto = new Produto("0", ano_camisa, nome_camisa,tamanho ,valor_produto, quantidade, image );
 
         new CadastroDao().createImagem(produto);
 

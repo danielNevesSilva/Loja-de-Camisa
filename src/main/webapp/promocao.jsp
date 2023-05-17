@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -60,27 +61,23 @@
                           <th>tamanho</th>
 
                       </tr>
-         <c:forEach var="produto" items="${produtos}">
+         <c:forEach var="Produto" items="${Produtos}">
             <tr>
-
-               <td>${produto.ano_camisa}</td>
-                <td>${produto.nome_camisa}</td>
-                <td>${produto.tamanho}</td>
-                <td>${produto.valor_produto}</td>
-
+                <td></td>
+                <td>${Produto.ano_camisa}</td>
+                <td>${Produto.nome_camisa}</td>
+                <td>${Produto.tamanho}</td>
+                <td>${Produto.valor_produto}</td>
                <td>
-                   <a href="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${produto.image}">
-     <img style="width: 100px" src="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${produto.image}" alt="...">
-                  </a>
+                <a href="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${Produto.image}">
+          <img style="width: 100px" src="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${Produto.image}" alt="...">
+                                   </a>
                </td>
             </tr>
          </c:forEach>
  </table>
-
-
                 </div>
               </div>
-
               <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="img/Camisa%20do%20São%20Paulo.webp" alt="camisetaTime">
                 <div class="card-body">
