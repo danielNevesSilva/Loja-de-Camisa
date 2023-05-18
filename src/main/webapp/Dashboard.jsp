@@ -33,6 +33,7 @@
                                   </td>
             </tr>
         </c:forEach>
+
   <table>
                <tr>
                            <th>ANOCAMISA</th>
@@ -55,6 +56,7 @@
              </tr>
           </c:forEach>
   </table>
+
     </table>
   </div>
 </body>

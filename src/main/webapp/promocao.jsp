@@ -20,7 +20,11 @@
         </div>
 
        <div class="direto">
+<<<<<<< HEAD
         <a href="promocao.html">Ofertas</a>
+=======
+        <a href="/find-all-produtos">Promoções</a>
+>>>>>>> 18c881a6e1f2822225c679e9148a1d71bee8f3d6
         <a href="">Camisas</a>
         <a href="index.jsp">Cadastre-se</a>
         <a href="">Contato</a>
@@ -55,12 +59,7 @@
 
               <div class="card" style="width: 18rem;">
  <table>
-              <tr>
-                          <th>ANOCAMISA</th>
-                          <th>nomeCamia</th>
-                          <th>tamanho</th>
 
-                      </tr>
          <c:forEach var="Produto" items="${Produtos}">
             <tr>
                 <td></td>
@@ -70,7 +69,9 @@
                 <td>${Produto.valorProduto}</td>
                <td>
                 <a href="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${Produto.image}">
-          <img style="width: 200px" src="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${Produto.image}" alt="...">
+
+          <img style="width: 150px, height 50px" src="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${Produto.image}" alt="...">
+
                                    </a>
                </td>
             </tr>
