@@ -15,7 +15,7 @@
     <a href="">logo</a>
     <div class="menu">
         
-        <a href="promocao.jps">Promoções</a>
+        <a href="/find-all-produtos">Promoções</a>
         <a href="">Camisas</a>
         <a href="index.jsp">Cadastre-se</a>
         <a href="">Contato</a>

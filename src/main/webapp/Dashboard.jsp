@@ -33,6 +33,24 @@
                                   </td>
             </tr>
         </c:forEach>
+
+         <table>
+
+                 <c:forEach var="Produto" items="${Produtos}">
+                    <tr>
+                        <td></td>
+                        <td>${Produto.anoCamisa}</td>
+                        <td>${Produto.nomeCamisa}</td>
+                        <td>${Produto.tamanho}</td>
+                        <td>${Produto.valorProduto}</td>
+                       <td>
+                        <a href="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${Produto.image}">
+                  <img style="width: 200px" src="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${Produto.image}" alt="...">
+                                           </a>
+                       </td>
+                    </tr>
+                 </c:forEach>
+         </table>
     </table>
   </div>
 </body>
