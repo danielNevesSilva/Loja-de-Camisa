@@ -21,6 +21,9 @@
 
        <div class="direto">
 
+
+        <a href="promocao.html">Ofertas</a>
+
         <a href="/find-all-produtos">Promoções</a>
 
 
@@ -46,6 +49,8 @@
         <div class="principal">
         <div class="primeiro">
             <div class="card" style="width: 18rem;">
+
+                <img class="card-img-top" src="img/Camisa%20do%20São%20Paulo.webp" alt="camisetaTime">
 
                 <div class="card-body">
                     <p>Camisa São Paulo |</p>

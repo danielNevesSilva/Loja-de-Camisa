@@ -14,11 +14,15 @@
 
     <a href="">logo</a>
     <div class="menu">
-        
-        <a href="promocao.html">Promoções</a></P>
-        <a href="">Camisas</a> </p>
+
+        <a href="/find-all-produtos">Promoções</a>
+        <a href="">Camisas</a>
+
+
         <a href="index.jsp">Cadastre-se</a>
         <a href="">Contato</a>
+        <a href="produto.html">Produto</a>
+
         
     </div>
 
