@@ -239,5 +239,5 @@ public class CadastroDao {
 
         }
     }
-    
+
 }
