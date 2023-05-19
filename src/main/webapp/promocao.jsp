@@ -20,11 +20,11 @@
         </div>
 
        <div class="direto">
-<<<<<<< HEAD
+
         <a href="promocao.html">Ofertas</a>
-=======
+
         <a href="/find-all-produtos">Promoções</a>
->>>>>>> 18c881a6e1f2822225c679e9148a1d71bee8f3d6
+
         <a href="">Camisas</a>
         <a href="index.jsp">Cadastre-se</a>
         <a href="">Contato</a>

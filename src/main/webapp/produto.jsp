@@ -45,9 +45,9 @@
         <p>Imagem:</p>
         <a href="./login.html"><img src="./Loja-de-Camisa/src/imagens/foto-login.webp" alt="foto-login"></a>
         <p>Ano da camisa:</p>
-        <input  id="ano_camisa" name="ano_camisa" required="required" value="${param.ano_camisa" type="month">
+        <input  id="ano_camisa" name="ano_camisa" required="required" value="${param.ano_camisa}" type="month">
         <p>Nome da camisa:</p>
-        <input id="nome_camisa" name="nome_camisa" required="required" value="${param.nome_camisa" type="text">
+        <input id="nome_camisa" name="nome_camisa" required="required" value="${param.nome_camisa}" type="text">
 
         <p>Tamanho do produto:</p>
 
@@ -69,7 +69,7 @@
         </div>
 
         <p>Valor do produto:</p>
-        <input id="valor_produto" name="valor_produto" required="required" value="${param.valor_camisa" type="number">
+        <input id="valor_produto" name="valor_produto" required="required" value="${param.valor_camisa}" type="number">
         <p>Quantidade</p>
         <input id="quantidade" name="quantidade" required="required" type="number">
 
@@ -81,7 +81,7 @@
         <p>Tamanho:</p>
         <p>Preço R$:</p>
 
-
+<input type="hidden" id="id" name="id" value="${param.id}">
             Selecione uma imagem para enviar: <input type="file" name="file" id="file"><br>
             <input type="submit" value="Enviar">
         </form>

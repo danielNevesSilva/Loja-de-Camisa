@@ -32,18 +32,26 @@ public class CreateImagemServelet extends HttpServlet {
         Map<String, String> parameters = uploadImage(req);
 
         String image = parameters.get("image");
+        String id = parameters.get("id");
         String ano_camisa = parameters.get("ano_camisa");
         String nome_camisa = parameters.get("nome_camisa");
         String tamanho = parameters.get("tamanho");
         String valor_produto = parameters.get("valor_produto");
         String quantidade = parameters.get("quantidade");
 
+        CadastroDao cadastroDao = new CadastroDao();
+        Produto produto = new Produto(id, ano_camisa, nome_camisa,tamanho ,valor_produto, quantidade, image );
 
-        Produto produto = new Produto("0", ano_camisa, nome_camisa,tamanho ,valor_produto, quantidade, image );
+        if (id.isBlank()) {
 
-        new CadastroDao().createImagem(produto);
+            cadastroDao.createImagem(produto);
 
-        resp.sendRedirect("/find-all-produtos");
+        } else {
+
+            cadastroDao.updateProduto(produto);
+        }
+
+        resp.sendRedirect("find-all-produtosADM");
 
     }
 
@@ -91,7 +99,6 @@ public class CreateImagemServelet extends HttpServlet {
         fileItem.write(new File(filePath));
         return fileName;
     }
-
 
 
 }

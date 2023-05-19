@@ -39,6 +39,4 @@ public class CreateCadastroServlet extends HttpServlet {
 
 
 
-
-
 }

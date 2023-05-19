@@ -179,4 +179,63 @@ public class CadastroDao {
         }
 
     }
+
+    public void deleteProdutoById(String ProdutoId) {
+        String SQL = "DELETE PRODUTO WHERE ID_PRODUTO = ?";
+
+        try {
+
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+            preparedStatement.setString(1, ProdutoId);
+            preparedStatement.execute();
+
+            System.out.println("success on delete name with id: " + ProdutoId);
+
+            connection.close();
+
+        } catch (Exception e) {
+
+            System.out.println("fail in database connection");
+        }
+    }
+
+
+    public void updateProduto(Produto produto) {
+
+        String SQL = "UPDATE PRODUTO SET ANOCAMISA = ?, NOMECAMISA = ? WHERE ID_PRODUTO = ?  ";
+
+        try {
+
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1, produto.getAnoCamisa());
+            preparedStatement.setString(2, produto.getNomeCamisa());
+
+            preparedStatement.setString(5, produto.getId());
+            preparedStatement.execute();
+
+            System.out.println("success in update PRODUTO");
+
+            connection.close();
+
+        } catch (Exception e) {
+
+            System.out.println("fail in database connection");
+            System.out.println("Error: " + e.getMessage());
+
+        }
+    }
+
+
+
+
+
 }
