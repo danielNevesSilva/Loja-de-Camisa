@@ -23,8 +23,12 @@
         <a href="find-all-produtos">Promoções</a>
 
         <a href="">Camisas</a>
-        <a href="index.jsp">Cadastre-se</a>
+
         <a href="">Contato</a>
+
+         <a href="/find-all-produtosADM">Tela ADM</a>
+         <a href="/find-all-Cadastro">Tela Cad</a>
+
     </div>
 
     <div class="icons">

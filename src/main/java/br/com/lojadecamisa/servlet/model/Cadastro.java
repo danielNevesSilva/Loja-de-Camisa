@@ -18,10 +18,8 @@ public class Cadastro {
         this.senha = senha;
     }
 
-    public Cadastro(String nome, String sobrenome, String email, String senha) {
+    public Cadastro(String nome, String senha) {
         this.nome = nome;
-        this.sobrenome = sobrenome;
-        this.email = email;
         this.senha = senha;
     }
 

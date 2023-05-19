@@ -18,10 +18,11 @@
           <a href="/find-all-produtos">Promoções</a></P>
 
           <a href="">Camisas</a> </p>
-          <a href="index.jsp">Cadastre-se</a>
+
           <a href="">Contato</a>
           <a href="/find-all-produtosADM">Tela ADM</a>
-          
+          <a href="/find-all-Cadastro">Tela Cad</a>
+
       </div>
   
       <a href="./login.html"><img src="/Loja-de-Camisa/src/imagens/foto-login.webp" alt="foto-login"></a>
@@ -31,11 +32,12 @@
       <div class="principal">
           <div class="cadastro">
   
-              <form action="/create-account" method="post">
-  
+
                   <!--FORMULÁRIO DE CADASTRO-->
-  
-                  <form method="post" action="">
+
+                      <span>${requestScope.message}</span>
+
+                  <form action="/login" method="post">
                       <h1>Acesse sua conta</h1>
   
                       <p>
@@ -55,11 +57,7 @@
   
           </div>
           </form>
-          <p class="link">
-            <label for="">Faça cadastro</label>
-              <a href="index.jsp"><button class="botao-cadastro" input type="submit" value="Cadastrar" > Cadastrar</button> </a>
-          </p>
-  
+
       </div>
   
       <div class="footer"></div>

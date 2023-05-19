@@ -18,10 +18,19 @@ public class ListCadastroServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        List<Cadastro> Cadastros = new CadastroDao().findAllCadastro();
+        if (null == req.getSession().getAttribute("nome_cad")) {
 
-        req.setAttribute("Cadastros", Cadastros);
+            req.setAttribute("Message", "Usuario invalido");
 
-        req.getRequestDispatcher("Dashboard.jsp").forward(req, resp);
+            req.getRequestDispatcher("login.jsp").forward(req, resp);
+        } else {
+
+            List<Cadastro> Cadastros = new CadastroDao().findAllCadastro();
+
+            req.setAttribute("Cadastros", Cadastros);
+
+            req.getRequestDispatcher("Dashboard.jsp").forward(req, resp);
+        }
     }
 }
+

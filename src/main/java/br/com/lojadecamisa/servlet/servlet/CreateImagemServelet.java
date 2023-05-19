@@ -51,7 +51,7 @@ public class CreateImagemServelet extends HttpServlet {
             cadastroDao.updateProduto(produto);
         }
 
-        resp.sendRedirect("find-all-produtosADM");
+        resp.sendRedirect("find-all-produtos");
 
     }
 

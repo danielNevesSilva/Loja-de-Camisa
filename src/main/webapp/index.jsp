@@ -19,9 +19,9 @@
         <a href="">Camisas</a>
 
 
-        <a href="index.jsp">Cadastre-se</a>
         <a href="">Contato</a>
-        <a href="produto.html">Produto</a>
+            <a href="/find-all-produtosADM">Tela ADM</a>
+          <a href="/find-all-Cadastro">Tela Cad</a>
 
         
     </div>
@@ -78,7 +78,7 @@
         </form>
         <p class="link">
              <label for="">Login</label>
-            <a href="login.html"><button class="botao-login">Login</button>  </a>
+            <a href="login.jsp"><button class="botao-login">Login</button>  </a>
         </p>
     </div>
 

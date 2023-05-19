@@ -240,4 +240,36 @@ public class CadastroDao {
         }
     }
 
+
+    public boolean Verificredentials(Cadastro cadastro) {
+
+        String SQL = "SELECT * FROM ADMINISTRADOR WHERE NOME = ?";
+
+        try{
+
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            System.out.println("success in database connection");
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1, cadastro.getNome());
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            System.out.println("Success in select Username");
+
+            while (resultSet.next()){
+                String Senha = resultSet.getString("Senha");
+                if (Senha.equals(cadastro.getSenha())){
+                    return true;
+                }
+            }
+
+            connection.close();
+            return false;
+        } catch (Exception e){
+            System.out.println("Erro: " + e.getMessage());
+
+            return false;
+        }
+    }
 }

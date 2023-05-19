@@ -7,6 +7,14 @@
 </head>
 <body>
   <div>
+   <span>${sessionScope.nome}</span>
+      <a href="/logout">Logout</a>
+
+<a href="produto.jsp">         Adicione Produto       </a>
+
+ <a href="index.jsp">           Cadastre usuarios</a>
+
+
     <h1>ADMINISTRADOR</h1>
     <table>
         <tr>

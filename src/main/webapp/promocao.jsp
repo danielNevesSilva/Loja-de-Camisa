@@ -22,13 +22,11 @@
        <div class="direto">
 
 
-        <a href="promocao.html">Ofertas</a>
 
         <a href="/find-all-produtos">Promoções</a>
 
-
         <a href="">Camisas</a>
-        <a href="index.jsp">Cadastre-se</a>
+
         <a href="">Contato</a>
      </div>
 

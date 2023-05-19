@@ -7,6 +7,12 @@
 </head>
 <body>
 
+ <span>${sessionScope.nome}</span>
+      <a href="/logout">Logout</a>
+
+    <a href="produto.jsp">Adicione Produto</a>
+
+
             <th>ID</th>
             <th>Ano da camisa</th>
             <th>Nome da camisa</th>

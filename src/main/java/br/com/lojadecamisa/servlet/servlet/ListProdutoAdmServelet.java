@@ -15,11 +15,21 @@ import java.util.List;
 
         @Override
         protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-            List<Produto> Produtos = new CadastroDao().selectProdutos();
 
-            req.setAttribute("Produtos", Produtos);
+            if (null == req.getSession().getAttribute("nome_cad")) {
 
-            req.getRequestDispatcher("Dashbordcamisa.jsp").forward(req, resp);
+                req.setAttribute("Message", "Usuario invalido");
 
+                req.getRequestDispatcher("login.jsp").forward(req, resp);
+
+            } else {
+
+                List<Produto> Produtos = new CadastroDao().selectProdutos();
+
+                req.setAttribute("Produtos", Produtos);
+
+                req.getRequestDispatcher("Dashbordcamisa.jsp").forward(req, resp);
+
+            }
         }
     }
