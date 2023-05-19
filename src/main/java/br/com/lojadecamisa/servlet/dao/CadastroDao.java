@@ -1,7 +1,9 @@
 package br.com.lojadecamisa.servlet.dao;
 
 import br.com.lojadecamisa.servlet.model.Cadastro;
+
 import br.com.lojadecamisa.servlet.model.Produto;
+
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -46,14 +48,18 @@ public class CadastroDao {
                 String sobrenome = resultSet.getString("SOBRENOME");
                 String email = resultSet.getString("EMAIL");
                 String senha = resultSet.getString("SENHA");
+
                 Cadastro cadastro = new Cadastro(id, nome, sobrenome, email, senha);
+
                 cadastros.add(cadastro);
             }
             System.out.println("Sucesso in select * adminitralção");
             connection.close();
 
             return cadastros;
+
         } catch (Exception e) {
+
             System.out.println("Falha na connection");
             return Collections.emptyList();
         }
@@ -85,6 +91,7 @@ public class CadastroDao {
 
     public void updateCadastro(Cadastro cadastro) {
 
+
         String SQL = "UPDATE ADMINISTRADOR SET NOME = ?, SOBRENOME = ? WHERE ID_ADM = ?  ";
 
         try {
@@ -112,7 +119,6 @@ public class CadastroDao {
 
         }
     }
-
 
     public void createImagem(Produto produto) {
 
@@ -233,9 +239,5 @@ public class CadastroDao {
 
         }
     }
-
-
-
-
-
+    
 }

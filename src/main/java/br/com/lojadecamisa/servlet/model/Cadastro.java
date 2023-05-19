@@ -9,14 +9,32 @@ public class Cadastro {
 
     private  String Id;
 
+<<<<<<< HEAD
 
     public Cadastro(String id, String nome, String sobrenome, String email, String senha) {
         this.Id = id;
+=======
+    public Cadastro(String Id, String nome, String sobrenome, String email, String senha){
+        this.Id = Id;
+>>>>>>> main
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.email = email;
         this.senha = senha;
     }
+<<<<<<< HEAD
+=======
+    public Cadastro(String nome, String sobrenome, String email, String senha) {
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.email = email;
+        this.senha = senha;
+    }
+
+    public Cadastro() {
+
+    }
+>>>>>>> main
 
     public String getNome() {
         return nome;
