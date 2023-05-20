@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="cadastro.css">
     <title>Cadrastro</title>
 </head>
 
@@ -16,7 +16,7 @@
     <div class="menu">
 
         <a href="/find-all-produtos">Promoções</a>
-        <a href="">Camisas</a>
+        <a href="index.html">inicio</a>
 
 
         <a href="">Contato</a>

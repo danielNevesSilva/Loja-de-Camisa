@@ -10,9 +10,9 @@
    <span>${sessionScope.nome}</span>
       <a href="/logout">Logout</a>
 
-<a href="produto.jsp">         Adicione Produto       </a>
+<a href="produto.jsp">Adicione Produto</a>
 
- <a href="index.jsp">           Cadastre usuarios</a>
+ <a href="cadastro.jsp">Cadastre usuarios</a>
 
 
     <h1>ADMINISTRADOR</h1>

@@ -1,0 +1,877 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+
+
+body {
+
+    background-color: #415078;
+
+}
+
+
+
+
+.container {
+
+    max-width: 1800px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+
+
+header {
+
+    width: 100%;
+
+    padding: 18px;
+
+}
+
+
+
+
+.logo,
+.login {
+
+    width: 20%;
+
+}
+
+
+
+
+.logo img {
+
+    width: 250px;
+
+    padding-right: 50px;
+
+    cursor: pointer;
+
+}
+
+
+
+
+.menu {
+
+    width: 50%;
+
+    cursor: pointer;
+
+}
+
+
+
+
+.menu nav a {
+
+    color: aliceblue;
+
+    text-decoration: none;
+
+    padding-right: 25px;
+
+    margin-left: 25px;
+
+    text-align: center;
+
+    position: relative;
+
+    font: 20px "PT-7";
+
+}
+
+
+
+
+.menu nav a::after {
+
+    content: " ";
+
+    width: 0px;
+
+    height: 4px;
+
+    background-image: linear-gradient(45deg, #EEF4FB, #fff);
+
+    position: absolute;
+
+    top: 30px;
+
+    left: 0;
+
+    transition: width 1s;
+
+}
+
+
+
+
+.menu nav a:hover::after {
+
+    width: 80px;
+
+}
+
+
+
+
+.login button {
+
+    width: 30px;
+
+    height: 30px;
+
+    background-image: linear-gradient(45deg, #EEF4FB, #fff);
+
+    border: none;
+
+    margin-left: 30px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+}
+
+
+
+
+.login button i {
+
+    font-size: 20px;
+
+    color: #415078;
+
+}
+
+
+
+
+/* Menu Mobile */
+
+
+
+
+.menu-mobile {
+
+    background-color: #0000008c;
+
+    backdrop-filter: blur(10px);
+
+    position: absolute;
+
+    top: 145px;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 0;
+
+    visibility: hidden;
+
+    transition: 0.5s;
+
+    overflow: hidden;
+
+}
+
+
+
+
+.menu-mobile nav a {
+
+    color: aliceblue;
+
+    text-decoration: none;
+
+    display: block;
+
+    padding: 20px 30px;
+
+    font-size: 16pt;
+
+}
+
+
+
+
+.menu-mobile nav a:hover {
+
+    background-color: hsla(0, 0%, 0%, 0.81);
+
+}
+
+
+
+
+#btn-menu {
+
+    background-color: transparent;
+
+    width: 50px;
+
+    height: 50px;
+
+    outline: none;
+
+    cursor: pointer;
+
+    border: 2px solid #fff;
+
+    transition: .2s;
+
+    display: none;
+
+}
+
+
+
+
+.linha {
+
+    position: relative;
+
+    height: 3px;
+
+    background: #fff;
+
+    width: 25px;
+
+    display: block;
+
+    margin: 5px auto;
+
+    transform-origin: center;
+
+    transition: .2s;
+
+}
+
+
+
+
+@media screen and (max-width:1030px) {
+
+    .menu,
+    .login {
+
+        display: none;
+
+    }
+
+
+
+
+    .logo {
+
+        width: 100%;
+
+    }
+
+
+
+
+    .menu-mobile.abrir {
+
+        visibility: visible;
+
+        height: calc(100vh -145px);
+
+    }
+
+
+
+
+    #btn-menu {
+
+        display: block;
+
+    }
+
+}
+
+
+
+
+/* -------------------------Poster---------------------------- */
+
+
+
+
+section.slider {
+
+    margin: 0 auto;
+
+    width: 100%;
+
+    height: auto;
+
+    padding: 0 !important;
+
+    overflow: hidden;
+
+}
+
+
+
+
+.slider-content {
+
+    width: 400%;
+
+    height: auto;
+
+    display: flex;
+
+}
+
+
+
+
+.slider-content input,
+.img-mobile {
+
+    display: none;
+
+}
+
+
+
+
+.slide-box {
+
+    width: 25%;
+
+    height: auto;
+
+    position: relative;
+
+    text-align: center;
+
+    transition: 1s;
+
+}
+
+
+
+
+.slide-box img {
+
+    width: 100%;
+
+}
+
+
+
+
+.nav-manual,
+.nav-auto {
+
+    position: absolute;
+
+    width: 100%;
+
+    margin-top: 35%;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+
+
+.nav-manual .manual-btn,
+.nav-auto div {
+
+    border: 1px solid #EEF4FB;
+
+    padding: 10px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+
+
+.nav-manual .manual-btn:not(:last-child),
+.nav-auto div:not(:last-child) {
+
+    margin-right: 10px;
+
+}
+
+
+
+
+.nav-manual .manual-btn:hover {
+
+    background-color: #415078;
+
+}
+
+
+
+
+#radio1:checked~.nav-auto .auto-btn1 {
+
+    background-color: #415078;
+
+}
+
+
+
+
+#radio2:checked~.nav-auto .auto-btn2 {
+
+    background-color: #415078;
+
+}
+
+
+
+
+#radio3:checked~.nav-auto .auto-btn3 {
+
+    background-color: #415078;
+
+}
+
+
+
+
+#radio1:checked~.primeiro {
+
+    margin-left: 0%;
+
+}
+
+
+
+
+#radio2:checked~.primeiro {
+
+    margin-left: -25%;
+
+}
+
+
+
+
+#radio3:checked~.primeiro {
+
+    margin-left: -50%;
+
+}
+
+
+
+
+@media screen and (max-width:900px) {
+
+    .img-desktop {
+
+        display: none;
+
+    }
+
+
+
+
+    .img-mobile {
+
+        display: none;
+
+    }
+
+
+
+
+    .nav-auto,
+    .nav-manual {
+
+        margin-top: 60%;
+
+
+
+    }
+
+}
+
+
+
+
+/* --------------------------------Segunda seção------------------------------------------- */
+
+
+
+
+.secao-2 {
+
+    display: flex;
+
+    flex-direction: column;
+
+    background-color: #92A1C8 !important;
+
+    padding: 50px 90px;
+
+    color: #2A344D;
+
+}
+
+
+
+
+.secao-2 h1 {
+
+    font: 40px "PT-3";
+
+    margin: 0px 10px 0px !important;
+
+}
+
+
+
+
+.secao-2 p {
+
+    font: 90px "PT-3";
+
+    margin: -10px 10px;
+
+    width: 1200px;
+
+}
+
+
+
+
+.secao-3 {
+
+    display: flex;
+
+    flex-direction: row;
+
+    padding: 40px 157px;
+
+}
+
+
+
+
+.secao-3 h1 {
+
+    flex-direction: column;
+
+    display: flex;
+
+    font: 50px "PT-7";
+
+    width: 450px;
+
+
+
+
+    color: #EEF4FB;
+
+}
+
+
+
+
+.secao-3 p {
+
+    font: 22px 'PT-7';
+
+    flex-direction: column;
+
+    display: flex;
+
+    color: #EEF4FB;
+
+    width: 400px;
+
+    margin: 20px 0px;
+
+}
+
+
+
+
+.btn-1 {
+
+    background-color: #292F36;
+
+    padding: 16px;
+
+    width: 215px;
+
+    border-radius: 20px;
+
+    align-items: center;
+
+    display: flex;
+
+    flex-direction: row;
+
+    transition:
+
+        0.5s;
+
+}
+
+
+
+
+.btn-1 a {
+
+    font: 20px 'PT-14';
+
+    color: #EEF4FB;
+
+}
+
+
+
+
+.btn-1:hover {
+
+    cursor: pointer;
+
+    background-color: #92A1C8;
+
+    color: #292F36;
+
+}
+
+
+
+
+.espaco {
+
+    margin: 130px;
+
+}
+
+
+
+
+.secao-3 img {
+
+    flex-direction: row;
+
+    display: flex;
+
+    width: 478px;
+
+    border-radius: 20px;
+
+}
+
+
+
+
+.secao-4 {
+
+    display: flex;
+
+    flex-direction: column;
+
+    background-color: #92A1C8 !important;
+
+    padding: 50px 90px;
+
+    color: #2A344D;
+
+}
+
+
+
+
+.secao-4 h1 {
+
+    font: 40px "PT-3";
+
+    margin: 30px 20px 60px !important;
+
+    color: #2A344D;
+
+}
+
+
+
+
+.camisas {
+
+    flex-direction: row;
+
+    display: flex;
+
+    margin: 0px, 100px;
+
+    padding-left: 60px;
+
+}
+
+
+
+
+.camisas_home {
+
+    padding-left: 100px;
+
+}
+
+
+
+
+.camisas_img {
+
+    flex-direction: row;
+
+    display: flex;
+
+    max-width: 300px;
+
+    height: 400px;
+
+    border-radius: 20px;
+
+}
+
+
+
+
+.descricao_camisa {
+
+    font: 19px "PT-10";
+
+    color: aliceblue;
+
+    margin: 10px, 10px, 10px;
+
+    width: 350px;
+
+}
+
+
+
+
+.frete {
+
+    font: 19px "PT-12";
+
+    color: #116939;
+
+    margin: 10px, 10px, 10px;
+
+}
+
+
+
+
+.valor {
+
+    font: 19px "PT-12";
+
+    color: #000206;
+
+    margin: 10px, 10px, 10px;
+
+}
+
+
+
+
+.btn-2 {
+
+    background-color: #292F36;
+
+    padding: 16px;
+
+    margin: 50px;
+
+    margin-left: 1130px;
+
+    width: 245px;
+
+    border-radius: 20px;
+
+    align-items: center;
+
+    display: flex;
+
+    flex-direction: row;
+
+    transition:
+
+        0.5s;
+
+}
+
+
+
+
+.btn-2 a {
+
+    font: 18px 'PT-14';
+
+    color: #EEF4FB;
+
+}
+
+
+
+
+.btn-2:hover {
+
+    cursor: pointer;
+
+    background-color: #2A344D;
+
+    color: #EEF4FB;
+
+}
+
+
+
+
+.secao-5 {
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 50px 90px;
+
+    color: #2A344D;
+
+}
