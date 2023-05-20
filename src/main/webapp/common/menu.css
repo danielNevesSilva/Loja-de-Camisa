@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #415078;
+    margin: 30px;
+}
+
+.logo{
+    width: 90px;
+    height: 90px;
+
+}
+
+.navbar > a{
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    margin: 20px 20px;
+    font: 40px;
+    font: 20px "PT-7" ;
+    padding-left: 30px;
+    transition: 0.3s;
+    color: aliceblue;
+}
+
+.navbar {
+    min-width: 70px;
+    padding: 0 34px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-link{
+    margin: 10px 10px;
+    font: 17px "PT-7" ;
+    padding-left: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #92A1C8;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.hamburguer{
+    display: none;
+    cursor:pointer;
+}
+
+.bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: aliceblue;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 760px) {
+    .hamburguer{
+        display: block;
+    }
+
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    
+    .hamburguer.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .acesso.active{
+        display: none;
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        gap: 0;
+        background-color: #415078;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+}
+
+@media (max-width: 1110px) {
+    .nav-link{
+        font: 10px;
+    }
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script src="https://kit.fontawesome.com/73985a4179.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../common/fonts.css">
+    <link rel="stylesheet" href="../../common/geral.css">
+    <link rel="stylesheet" href="../../common/reset.css">
+    <link rel="stylesheet" href="../../../../Downloads/OneDrive_1_19-05-2023/index.css">
+
+    <title>PT.II | Loja de Camisas</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+
+            <div class="logo">
+                <a href="#"><img src="../../assets/images/urso_logo.png" alt=""></a>
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <a href="#">PROMOÇÕES</a>
+                    <a href="#">CAMISAS</a>
+                    <a href="#">QUEM SOMOS</a>
+                    <a href="#">CONTATO</a>
+                </nav>
+            </div>
+
+            <button onclick="animarMenu()" id="btn-menu">
+                <span class="linha"></span>
+                <span class="linha"></span>
+                <span class="linha"></span>
+            </button>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <nav>
+                    <a href="#">PROMOÇÕES</a>
+                    <a href="#">CAMISAS</a>
+                    <a href="#">QUEM SOMOS</a>
+                    <a href="#">CONTATO</a>
+                </nav>
+            </div>
+
+            <div class="login">
+                <button><i class="fa-thin fa-right-to-bracket"></i></button>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="slider">
+        <div class="slider-content">
+
+            <!--Radio Buttons-->
+
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+
+            <div class="slide-box primeiro">
+                <img class="img-desktop" src="../../assets/images/1_liberta.jpeg" alt="">
+                <img class="img-mobile" src="../../assets/images/1_liberta_mobile.jpeg" alt="">
+            </div>
+
+            <div class="slide-box ">
+                <img class="img-desktop" src="../../assets/images/2_bvb.jpg" alt="">
+                <img class="img-mobile" src="../../assets/images/2_bvb_mobile.jpg" alt="">
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="../../assets/images/3_palmeiras.jpg" alt="">
+                <img class="img-mobile" src="../../assets/images/3_palmeiras_mobile.jpg" alt="">
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="secao-2">
+        <div>
+            <h1>Vista a camisa</h1>
+            <p>do seu Time do Coração</p>
+        </div>
+    </div>
+
+    <div class="secao-3">
+        <div class="s3-luva">
+            <h1>Conquiste o seu manto</h1>
+            <p>O seu time é melhor do mundo, e só clubista pensa diferente, mostre ao mundo o amor que você tem por
+                seu
+                time, e compre já a sua camisa.</p>
+            <div class="btn-1">
+                <a href="#">Vamos lá</a>
+                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.5 8.43615L15.2232 8.2993M10.1182 1.91211L16.6412 8.43509L9.98677 15.0895"
+                        stroke="#CDA274" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+                </svg>
+            </div>
+
+        </div>
+        <div class="espaco"></div>
+        <img src="../../assets/images/luva.png" alt="">
+    </div>
+
+    <div class="secao-4">
+        <h1>Promoções</h1>
+        <div class="camisas">
+            <div class="camisas_home">
+                <a href="#"><img class="camisas_img" src="../../assets/images/Palmeiras.webp" alt="Camisa time"></a>
+                <p class="descricao_camisa">Camisa Palmeiras I 23/24 S/ Nº Jogador Puma Feminina</p>
+                <p class="frete">Frete Grátis</p>
+                <p class="valor">R$ 429,90</p>
+            </div>
+            <div class="camisas_home">
+                <a href="#"><img class="camisas_img" src="../../assets/images/Gamba.webp" alt="Camisa time"></a>
+                <p class="descricao_camisa">Camisa Cortinas I 23/24 S/ Nº Jogador Puma Feminina</p>
+                <p class="frete">Frete Grátis</p>
+                <p class="valor">R$ 429,90</p>
+            </div>
+            <div class="camisas_home">
+                <a href="#"><img class="camisas_img" src="../../assets/images/Vasco.webp" alt="Camisa time"></a>
+                <p class="descricao_camisa">Camisa Vasco da Gama I 23/24 S/ Nº Jogador Puma Feminina</p>
+                <p class="frete">Frete Grátis</p>
+                <p class="valor">R$ 429,90</p>
+            </div>
+        </div>
+        <div class="btn-2">
+            <a href="#">Todas ofertas</a>
+            <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.5 8.43615L15.2232 8.2993M10.1182 1.91211L16.6412 8.43509L9.98677 15.0895" stroke="#CDA274"
+                    stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+            </svg>
+        </div>
+    </div>
+
+
+    <div class="secao-5">
+
+    </div>
+
+    <script src="laddingPage.js" defer></script>
+    <script src="animar.js"></script>
+
+</body>
+
+</html>
