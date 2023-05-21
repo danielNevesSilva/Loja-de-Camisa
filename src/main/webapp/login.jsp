@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./common/login1.css">
     <link rel="stylesheet" href="./common/menu.css">
 
-    <title>Document</title>
+    <title>Login</title>
 </head>
 <body>
 <!--Inicio Menu-->
@@ -38,10 +38,10 @@
 
         <div class="menu-mobile">
             <nav>
-                <a href="./promocao.jsp">------</a>
-                <a href="./produto.jsp">PRODUTOS</a>
-                <a href="#">QUEM SOMOS</a>
-                <a href="../webapp/login.jsp">LOGIN</a>
+                <a href="index.html">INICIO</a>
+                <a href="https://web.whatsapp.com/send?phone=5599111112222">CONTATO</a>
+                <a href="/find-all-produtos">CAMISAS</a>
+                <a href="/find-all-produtosADM">ADMIN</a>
             </nav>
         </div>
 

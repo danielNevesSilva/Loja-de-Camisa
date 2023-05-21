@@ -1,0 +1,80 @@
+.principal{
+    background-color: #92A1C8;
+
+}
+
+.icons{
+    color: #FFFFFF;
+    word-spacing: 20px;
+    margin-right: 20px;
+}
+
+.promocao{
+    padding: 100px 0px 0px 400px;
+}
+
+.promocao > h2{
+    font: 40px "PT-3";
+    color: #2A344D;
+}
+
+.primeiro img{
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.primeiro{
+    display: flex;
+    margin: 70px 0px 40px 400px;
+}
+.valor{
+    color: #000206;
+    font: "Poppins";
+}
+.frete{
+    color: #116939;
+    font: "Poppins";
+}
+.card-body{
+    padding: 10px 70px 0px 20px;
+    color: #FFFFFF;
+    line-height: 23px;
+}
+
+.segundo{
+    display: flex;
+    margin: 40px 0px 40px 400px;
+}
+
+.terceiro{
+    display: flex;
+    margin-left: 400px;
+    margin-bottom: 100px;
+
+}
+
+.voltar-topo{
+    font-family: 'Jost';
+    padding: 15px 15px;
+    letter-spacing: 0.5px;
+    border-radius: 179.467px;
+    margin: 0px 190px 10px 972px;
+}
+
+button{
+    font-family: 'Jost';
+    background: #292F36;
+    color: #FFFFFF;
+    border-radius: 20px;
+    padding: 10px;
+}
+button:hover{
+    background: #424e5c;
+}
+
+.footer{
+    padding: 70px;
+    background-color: #415078;
+
+}

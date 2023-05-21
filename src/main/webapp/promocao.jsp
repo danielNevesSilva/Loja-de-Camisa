@@ -5,42 +5,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ofertas</title>
+    <link rel="stylesheet" href="./common/fonts.css">
+    <link rel="stylesheet" href="./common/menu.css">
+    <link rel="stylesheet" href="./common/promocao1.css">
 
-   <link rel="stylesheet" href="promocao.css">
+    <title>PROMOÇÃO</title>
 
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
    rel="stylesheet">
 
 </head>
 <body>
-    <div class="header">
-        <div class="logo-inicio">
-        <h6>LOGO</h6> 
+
+<!--Inicio Menu-->
+<header>
+    <div class="container">
+
+        <div class="logo">
+            <a href="./index.html"><img src="./assets/images/urso_logo.png" alt=""></a>
         </div>
 
-       <div class="direto">
+        <div class="menu">
+            <nav>
+                <a href="index.html">INICIO</a>
+                <a href="/find-all-produtos">CAMISAS</a>
+                <a href="https://web.whatsapp.com/send?phone=5599111112222">CONTATO</a>
+                <a href="#">QUEM SOMOS</a>
+            </nav>
+        </div>
 
-        <a href="index.html">INICIO</a>
-        <a href="/find-all-produtos">CAMISAS</a>
-        <a href="https://web.whatsapp.com/send?phone=5599111112222">CONTATO</a>
-        <a href="#">QUEM-SOMOS</a>
-        <a href="login.jsp">LOGIN</a>
-     </div>
+        <button onclick="animarMenu()" id="btn-menu">
+            <span class="linha"></span>
+            <span class="linha"></span>
+            <span class="linha"></span>
+        </button>
 
-     <div class="icons">
-        <span class="material-icons"> shopping_cart</span>
-        <a href="./login.html">
-        <span class="material-icons">account_circle</span>
-     </div>
-       
+        <!-- Menu Responsivo -->
+
+        <div class="menu-mobile">
+            <nav>
+                <a href="index.html">INICIO</a>
+                <a href="/find-all-produtos">CAMISAS</a>
+                <a href="https://web.whatsapp.com/send?phone=5599111112222">CONTATO</a>
+                <a href="#">QUEM SOMOS</a>
+            </nav>
+        </div>
+
+        <div class="login">
+            <a href="../webapp/login.jsp"> <img src="./assets/images/login.svg" alt=""></a>
+        </div>
+
     </div>
+
+</header>
+
+<!--Final Menu-->
 
     <div class="principal">
 
         <div class="promocao">
          
-        <h2>Ofertas</h2>
+        <h2>OFERTAS</h2>
         </div>
         <div class="primeiro">
               <c:forEach var="Produto" items="${Produtos}">
