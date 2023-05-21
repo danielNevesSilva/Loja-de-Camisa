@@ -25,6 +25,7 @@
                 <a href="https://web.whatsapp.com/send?phone=5599111112222" target="_blank">CONTATO</a>
                 <a href="/find-all-produtos">CAMISAS</a>
                 <a href="/find-all-produtosADM">ADMIN</a>
+                <a href="cadastro.jsp">TESTE</a>
             </nav>
         </div>
 

@@ -1,9 +1,7 @@
 * {
     margin: 0px;
-    background-color: #92A1C8;
     font-family: sans-serif;
 }
-
 
 .principal {
     background-color: #92A1C8;
@@ -11,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    padding: 100px;
 }
 
 .principal input {
@@ -24,7 +22,6 @@
     font-family: sans-serif;
     color: #2A344D;
     margin-top: 5px;
-
 }
 
 .cadastro {
@@ -78,7 +75,7 @@ a {
     background-color: #D9D9D9;
     border: none;
     color: #2A344D;
-    ;
+;
     text-decoration: none;
     cursor: pointer;
 }

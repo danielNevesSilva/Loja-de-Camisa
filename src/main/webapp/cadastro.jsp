@@ -5,30 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="./common/cadastro1.css">
+    <link rel="stylesheet" href="./common/fonts.css">
+    <link rel="stylesheet" href="./common/menu.css">
     <title>Cadrastro</title>
 </head>
 
 <body>
-  <div class="top">
 
-    <a href="">logo</a>
-    <div class="menu">
+<!--Inicio Menu-->
+<header>
+    <div class="container">
 
-        <a href="/find-all-produtos">Promoções</a>
-        <a href="index.html">inicio</a>
+        <div class="logo">
+            <a href="./index.html"><img src="./assets/images/urso_logo.png" alt=""></a>
+        </div>
 
+        <div class="menu">
+            <nav>
+                <a href="index.html">INICIO</a>
+                <a href="https://web.whatsapp.com/send?phone=5599111112222" target="_blank">CONTATO</a>
+                <a href="/find-all-produtos">CAMISAS</a>
+                <a href="/find-all-produtosADM">ADMIN</a>
+                <a href="cadastro.jsp">TELA CAD</a>
+            </nav>
+        </div>
 
-        <a href="">Contato</a>
-            <a href="/find-all-produtosADM">Tela ADM</a>
-          <a href="/find-all-Cadastro">Tela Cad</a>
+        <button onclick="animarMenu()" id="btn-menu">
+            <span class="linha"></span>
+            <span class="linha"></span>
+            <span class="linha"></span>
+        </button>
 
-        
+        <!-- Menu Responsivo -->
+
+        <div class="menu-mobile">
+            <nav>
+                <a href="index.html">INICIO</a>
+                <a href="https://web.whatsapp.com/send?phone=5599111112222">CONTATO</a>
+                <a href="/find-all-produtos">CAMISAS</a>
+                <a href="/find-all-produtosADM">ADMIN</a>
+            </nav>
+        </div>
+
+        <div class="login">
+            <a href="../webapp/login.jsp"> <img src="./assets/images/login.svg" alt=""></a>
+        </div>
+
     </div>
 
-    <a href="./login.html"><img src="/Loja-de-Camisa/src/imagens/foto-login.webp" alt="foto-login"></a>
-    </div>
-  </div>
+</header>
+
+<!--Final Menu-->
 
     <div class="principal">
         <div class="cadastro">
