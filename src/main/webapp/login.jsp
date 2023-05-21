@@ -4,26 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="./common/fonts.css">
+    <link rel="stylesheet" href="./common/login1.css">
+    <link rel="stylesheet" href="./common/menu.css">
+
     <title>Document</title>
 </head>
 <body>
+<!--Inicio Menu-->
+<header>
+    <div class="container">
 
-    <div class="top">
-      <a href="index.html"><img style="width: 150px, height 50px" src="../../assets/images/urso_logo.png" alt=""></a>
-      <div class="menu">
-          
+        <div class="logo">
+            <a href="./index.html"><img src="./assets/images/urso_logo.png" alt=""></a>
+        </div>
 
-        <a href="index.html">INICIO</a>
-          <a href="/find-all-produtos">CAMISAS</a></P>
-          <a href="https://web.whatsapp.com/send?phone=5599111112222">CONTATO</a>
-          <a href="/find-all-produtosADM">ADMIN</a>
+        <div class="menu">
+            <nav>
+                <a href="index.html">INICIO</a>
+                <a href="https://web.whatsapp.com/send?phone=5599111112222">CONTATO</a>
+                <a href="/find-all-produtos">CAMISAS</a>
+                <a href="/find-all-produtosADM">ADMIN</a>
+            </nav>
+        </div>
 
-      </div>
-  
-      <a href="login.jsp">  <span>LOGIN</span></a>
-      </div>
+        <button onclick="animarMenu()" id="btn-menu">
+            <span class="linha"></span>
+            <span class="linha"></span>
+            <span class="linha"></span>
+        </button>
+
+        <!-- Menu Responsivo -->
+
+        <div class="menu-mobile">
+            <nav>
+                <a href="./promocao.jsp">------</a>
+                <a href="./produto.jsp">PRODUTOS</a>
+                <a href="#">QUEM SOMOS</a>
+                <a href="../webapp/login.jsp">LOGIN</a>
+            </nav>
+        </div>
+
+        <div class="login">
+            <a href="../webapp/login.jsp"> <img src="./assets/images/login.svg" alt=""></a>
+        </div>
+
     </div>
+
+</header>
+
+<!--Final Menu-->
   
       <div class="principal">
           <div class="cadastro">

@@ -6,52 +6,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../common/fonts.css">
-    <link rel="stylesheet" href="../../common/geral.css">
-    <link rel="stylesheet" href="../../common/reset.css">
     <link rel="stylesheet" href="./common/index.css">
+    <link rel="stylesheet" href="./common/menu.css">
+    <link rel="stylesheet" href="./common/fonts.css">
 
     <title>PT.II | Loja de Camisas</title>
 </head>
 
 <body>
+<header>
+    <div class="container">
 
-    <header>
-        <div class="container">
-
-            <div class="logo">
-                <a href="#"><img  src="../../assets/images/urso_logo.png" alt=""></a>
-            </div>
-
-            <div class="menu">
-                <nav>
-                    <a href="/find-all-produtos">CAMISAS</a>
-                    <a href="https://web.whatsapp.com/send?phone=5599111112222">CONTATO</a>
-                    <a href="#">QUEM SOMOS</a>
-                    <a href="login.jsp">Login</a>
-                </nav>
-            </div>
-
-            <button onclick="animarMenu()" id="btn-menu">
-                <span class="linha"></span>
-                <span class="linha"></span>
-                <span class="linha"></span>
-            </button>
-
-            <div class="menu-mobile" id="menu-mobile">
-                <nav>
-                    <a href="#">PROMOÇÕES</a>
-                    <a href="#">CAMISAS</a>
-                    <a href="#">QUEM SOMOS</a>
-                    <a href="#">CONTATO</a>
-                </nav>
-            </div>
-
-   
-            </div>
-
+        <div class="logo">
+            <a href="../webapp/index.html"><img src="./assets/images/urso_logo.png" alt=""></a>
         </div>
-    </header>
+
+        <div class="menu">
+            <nav>
+                <a href="/find-all-produtos">CAMISAS</a>
+                <a href="https://web.whatsapp.com/send?phone=5599111112222">CONTATO</a>
+                <a href="#">QUEM SOMOS</a>
+                <a href="./login.jsp">TELA ADMIN</a>
+            </nav>
+        </div>
+
+        <button onclick="animarMenu()" id="btn-menu">
+            <span class="linha"></span>
+            <span class="linha"></span>
+            <span class="linha"></span>
+        </button>
+
+        <!-- Menu Responsivo -->
+
+        <div class="menu-mobile">
+            <nav>
+                <a href="./promocao.jsp">------</a>
+                <a href="./produto.jsp">PRODUTOS</a>
+                <a href="#">QUEM SOMOS</a>
+                <a href="../webapp/login.jsp">LOGIN</a>
+            </nav>
+        </div>
+
+        <div class="login">
+            <a href="./login.jsp"> <img src="./assets/images/login.svg" alt=""></a>
+        </div>
+
+    </div>
+
+</header>
 
     <section class="slider">
         <div class="slider-content">
@@ -153,7 +155,7 @@
 
     </div>
 
-    <script src="./common/index.js" defer></script>
+    <script src="./common/index.js"></script>
     <script src="./common/animar.js"></script>
 
 </body>
