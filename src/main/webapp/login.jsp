@@ -22,7 +22,7 @@
         <div class="menu">
             <nav>
                 <a href="index.html">INICIO</a>
-                <a href="https://web.whatsapp.com/send?phone=5599111112222">CONTATO</a>
+                <a href="https://web.whatsapp.com/send?phone=5599111112222" target="_blank">CONTATO</a>
                 <a href="/find-all-produtos">CAMISAS</a>
                 <a href="/find-all-produtosADM">ADMIN</a>
             </nav>

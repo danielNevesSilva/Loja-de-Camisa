@@ -24,7 +24,7 @@
 
         <a href="/find-all-produtos">CAMISAS</a>
 
-        <a href="https://web.whatsapp.com/send?phone=5599111112222">CONTATO</a>
+        <a href="https://web.whatsapp.com/send?phone=5599111112222" target="_blank">CONTATO</a>
 
         <a href="#">QUEM-SOMOS</a>
 
