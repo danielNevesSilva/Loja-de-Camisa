@@ -8,10 +8,11 @@
 <body>
 
  <span>${sessionScope.nome}</span>
-      <a href="/logout">Logout</a>
-
-    <a href="produto.jsp">Adicione Produto</a>
-
+    
+ <p> <a href="index.html">INICIO</a></p>
+ <p></p><a href="/logout">Logout</a></p>
+ <p><a href="produto.jsp">Adicione Produto</a></p>
+ <p><a href="Dashboard.jsp">Adicione usuario</a></p>
 
             <th>ID</th>
             <th>Ano da camisa</th>

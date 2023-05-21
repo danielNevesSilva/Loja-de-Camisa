@@ -10,15 +10,12 @@
     text-align: center;
     justify-content: space-between;
     align-items: center;
-   
 }
 .logo-inicio{
    padding: 6px 13px;
    background: #FFFFFF;
    border-radius: 179.467px;
    margin-left: 60px;
-    
-     
 }
 
 .direto{
@@ -37,9 +34,20 @@ text-decoration: none;
 
 }
 
-.principal{
+.principal {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #92A1C8;
+}
 
+.principal img{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.principal a{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -49,9 +57,6 @@ text-decoration: none;
     margin-right: 20px;
 }
 
-.promocao{
-    padding: 100px 0px 0px 400px;
-}
 
 .promocao > h2{
     font-family: "Poppins";
@@ -68,8 +73,9 @@ img{
 
 .primeiro{
     display: flex;
-    margin: 70px 0px 40px 400px;
+    flex-wrap: wrap;
 }
+
 .valor{
     color: #000206;
     font: "Poppins";
@@ -78,10 +84,10 @@ img{
     color: #116939;
     font: "Poppins";
 }
+
 .card-body{
-    padding: 10px 70px 0px 20px;
-    color: #FFFFFF;
-    line-height: 23px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .segundo{

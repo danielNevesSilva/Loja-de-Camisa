@@ -8,25 +8,20 @@
     <title>Document</title>
 </head>
 <body>
-    
-<body>
+
     <div class="top">
-      <a href="">logo</a>
+      <a href="index.html"><img style="width: 150px, height 50px" src="../../assets/images/urso_logo.png" alt=""></a>
       <div class="menu">
           
 
-          <a href="/find-all-produtos">Promoções</a></P>
-
-          <a href="">Camisas</a> </p>
-    <a href="index.html">inicio</a>
-
-          <a href="">Contato</a>
-          <a href="/find-all-produtosADM">Tela ADM</a>
-          <a href="/find-all-Cadastro">Tela Cad</a>
+        <a href="index.html">INICIO</a>
+          <a href="/find-all-produtos">CAMISAS</a></P>
+          <a href="https://web.whatsapp.com/send?phone=5599111112222">CONTATO</a>
+          <a href="/find-all-produtosADM">ADMIN</a>
 
       </div>
   
-      <a href="./login.html"><img src="/Loja-de-Camisa/src/imagens/foto-login.webp" alt="foto-login"></a>
+      <a href="login.jsp">  <span>LOGIN</span></a>
       </div>
     </div>
   
@@ -61,8 +56,7 @@
 
       </div>
   
-      <div class="footer"></div>
-  
     
 </body>
+
 </html>

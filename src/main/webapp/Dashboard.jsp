@@ -8,12 +8,12 @@
 <body>
   <div>
    <span>${sessionScope.nome}</span>
-      <a href="/logout">Logout</a>
+ <p>  <a href="index.html">INICIO</a></p>
 
-<a href="produto.jsp">Adicione Produto</a>
+ <p>  <a href="produto.jsp">Adicione Produto</a></p>
+    <p><a href="/find-all-cadastro"></a></p>
 
- <a href="cadastro.jsp">Cadastre usuarios</a>
-
+        <p><a href="/logout">Logout</a></p>
 
     <h1>ADMINISTRADOR</h1>
     <table>

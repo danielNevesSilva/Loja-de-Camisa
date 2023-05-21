@@ -155,3 +155,9 @@
        height: 100px;
        background-color: #415078;
    }
+
+   .logo img {
+       width: 250px;
+       padding-right: 50px;
+       cursor: pointer;
+   }

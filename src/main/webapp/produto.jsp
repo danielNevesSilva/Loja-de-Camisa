@@ -20,20 +20,22 @@
 
     <div class="direto">
 
-        <a href="find-all-produtos">Promoções</a>
+      <a href="index.html">INICIO</a>
 
-        <a href="">Camisas</a>
+        <a href="/find-all-produtos">CAMISAS</a>
 
-        <a href="">Contato</a>
+        <a href="https://web.whatsapp.com/send?phone=5599111112222">CONTATO</a>
 
-         <a href="/find-all-produtosADM">Tela ADM</a>
-         <a href="/find-all-Cadastro">Tela Cad</a>
+        <a href="#">QUEM-SOMOS</a>
+
+         <a href="/find-all-produtosADM">ADMIN</a>
+        
 
     </div>
 
     <div class="icons">
-        <span class="material-icons"> shopping_cart</span>
-        <span class="material-icons">account_circle</span>
+        
+      <a href="login.jsp">  <span class="material-icons">account_circle</span></a>
     </div>
 </div>
 
@@ -48,8 +50,8 @@
 
         <form action="/create-image" method="post" enctype="multipart/form-data">
 
-        <p>Imagem:</p>
-        <a href="./login.html"><img src="./Loja-de-Camisa/src/imagens/foto-login.webp" alt="foto-login"></a>
+        
+        
         <p>Ano da camisa:</p>
         <input  id="ano_camisa" name="ano_camisa" required="required" value="${param.ano_camisa}" type="month">
         <p>Nome da camisa:</p>
@@ -83,22 +85,13 @@
 
     <div class="descricao">
 
-        <p>Nome:</p>
-        <p>Tamanho:</p>
-        <p>Preço R$:</p>
+        
 
 <input type="hidden" id="id" name="id" value="${param.id}">
             Selecione uma imagem para enviar: <input type="file" name="file" id="file"><br>
             <input type="submit" value="Enviar">
         </form>
 
-        <div>
-        <button class="confirmar"> Confirmar sua cadastro</button>
-        </div>
-
-        <div>
-        <button class="dcr">Voltar ao logo</button>
-        </div>
     </div>
 
 </div>

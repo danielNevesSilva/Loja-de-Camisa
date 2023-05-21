@@ -21,13 +21,11 @@
 
        <div class="direto">
 
-
-
-        <a href="/find-all-produtos">Promoções</a>
-
-        <a href="">Camisas</a>
-
-        <a href="">Contato</a>
+        <a href="index.html">INICIO</a>
+        <a href="/find-all-produtos">CAMISAS</a>
+        <a href="https://web.whatsapp.com/send?phone=5599111112222">CONTATO</a>
+        <a href="#">QUEM-SOMOS</a>
+        <a href="login.jsp">LOGIN</a>
      </div>
 
      <div class="icons">
@@ -41,142 +39,38 @@
     <div class="principal">
 
         <div class="promocao">
-
+         
         <h2>Ofertas</h2>
         </div>
-        <div class="principal">
         <div class="primeiro">
-            <div class="card" style="width: 18rem;">
-
-                <img class="card-img-top" src="img/Camisa%20do%20São%20Paulo.webp" alt="camisetaTime">
-
+              <c:forEach var="Produto" items="${Produtos}">
+              <a href="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${Produto.image}">
+                <img style="width: 150px, height 50px" src="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${Produto.image}" alt="...">
+                </a>
                 <div class="card-body">
-                    <p>Camisa São Paulo |</p>
-                    <p>23/24 S/ Nº Jogador</p>
-                    <p>Adidas Masculino</p>
+                    <p>Ano da camisa <td>${Produto.anoCamisa}</td></p>
+                    <p>Tamanho <td>${Produto.tamanho}</td>
                     <p class="frete">Frete Grátis</p>
-                    <h4 class="valor">R$ 429,90</h4>
+                    <p>Valor <td>${Produto.valorProduto}</td></p>
                 </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-
- <table>
-
-         <c:forEach var="Produto" items="${Produtos}">
-            <tr>
-                <td></td>
-                <td>${Produto.anoCamisa}</td>
-                <td>${Produto.nomeCamisa}</td>
-                <td>${Produto.tamanho}</td>
-                <td>${Produto.valorProduto}</td>
-               <td>
-                <a href="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${Produto.image}">
-
-          <img style="width: 150px, height 50px" src="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${Produto.image}" alt="...">
-
-                                   </a>
-               </td>
-            </tr>
-         </c:forEach>
- </table>
-
+              </c:forEach>
+              
+            
                 </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="img/Camisa%20do%20São%20Paulo.webp" alt="camisetaTime">
-                <div class="card-body">
-                    <p>Camisa São Paulo |</p>
-                    <p>23/24 S/ Nº Jogador</p>
-                    <p>Adidas Masculino</p>
-                    <p class="frete">Frete Grátis</p>
-                    <h4 class="valor">R$ 429,90</h4>
-                </div>
-              </div>
-            </div>
-    
-
-            <div class="segundo">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/Camisa%20do%20São%20Paulo.webp" alt="camisetaTime">
-                    <div class="card-body">
-                        <p>Camisa São Paulo |</p>
-                        <p>23/24 S/ Nº Jogador</p>
-                        <p>Adidas Masculino</p>
-                        <p class="frete">Frete Grátis</p>
-                        <h4 class="valor">R$ 429,90</h4>
-                    </div>
+                <div class="voltar-topo">
+                  <button>Voltar ao topo</button>
                   </div>
-    
-                  <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/Camisa%20do%20São%20Paulo.webp" alt="camisetaTime">
-                    <div class="card-body">
-                        <p>Camisa São Paulo |</p>
-                        <p>23/24 S/ Nº Jogador</p>
-                        <p>Adidas Masculino</p>
-                        <p class="frete">Frete Grátis</p>
-                        <h4 class="valor">R$ 429,90</h4>
-                    </div>
-                  </div>
-    
-                  <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/Camisa%20do%20São%20Paulo.webp" alt="camisetaTime">
-                    <div class="card-body">
-                        <p>Camisa São Paulo |</p>
-                        <p>23/24 S/ Nº Jogador</p>
-                        <p>Adidas Masculino</p>
-                        <p class="frete">Frete Grátis</p>
-                        <h4 class="valor">R$ 429,90</h4>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="terceiro">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="img/Camisa%20do%20São%20Paulo.webp" alt="camisetaTime">
-                        <div class="card-body">
-                            <p>Camisa São Paulo |</p>
-                            <p>23/24 S/ Nº Jogador</p>
-                            <p>Adidas Masculino</p>
-                            <p class="frete">Frete Grátis</p>
-                            <h4 class="valor">R$ 429,90</h4>
-                        </div>
-                      </div>
+              </div>
         
-                      <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="img/Camisa%20do%20São%20Paulo.webp" alt="camisetaTime">
-                        <div class="card-body">
-                            <p>Camisa São Paulo |</p>
-                            <p>23/24 S/ Nº Jogador</p>
-                            <p>Adidas Masculino</p>
-                            <p class="frete">Frete Grátis</p>
-                            <h4 class="valor">R$ 429,90</h4>
-                        </div>
-                      </div>
-        
-                      <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="img/Camisa%20do%20São%20Paulo.webp" alt="camisetaTime">
-                        <div class="card-body">
-                            <p>Camisa São Paulo |</p>
-                            <p>23/24 S/ Nº Jogador</p>
-                            <p>Adidas Masculino</p>
-                            <p class="frete">Frete Grátis</p>
-                            <h4 class="valor">R$ 429,90</h4>
-                        </div>
-                      </div>
-                    </div>
-
-        <div class="voltar-topo">
-        <button>Voltar ao topo</button>
-        </div>
-    </div>
+    
+   
     
 
-    <footer>
+    
     <div class="footer">
-      
+      <footer></footer>  
     </div>
-    </footer>
+    
     
 </body>
 </html>
