@@ -47,7 +47,7 @@
         </div>
 
         <div class="login">
-            <a href="../webapp/login.jsp"> <img src="./assets/images/login.svg" alt=""></a>
+            <a href="./login.jsp"> <img src="./assets/images/login.svg" alt=""></a>
         </div>
 
     </div>
