@@ -3,60 +3,6 @@
     box-sizing: border-box;
 }
 
-.card{
-    width: 17rem;
-    height: 25rem;
-    margin-bottom: 10px;
-}
-
-.card > img{
-    height: 16rem;
-}
-
-.card-body{
-    background: #c2c3c5;
-}
-
-.header{
-    background-color: #415078;
-    height: 90px;
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo-inicio{
-    padding: 6px 13px;
-    background: #FFFFFF;
-    border-radius: 179.467px;
-    margin-left: 60px;
- }
-
- .direto{
-    word-spacing: 80px;
-  }
-
-  .direto > a:hover{
-    color: rgb(161, 156, 156);
-  }
-
-  a{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
-    color: #FFFFFF;
-    text-decoration: none;
-    }
-
-
-    .icons{
-        color: #FFFFFF;
-        word-spacing: 20px;
-        margin-right: 20px;
-    }
-
     .nav-principal{
         background-color: #92A1C8;
     }
