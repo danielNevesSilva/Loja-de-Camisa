@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.card{
+    width: 17rem;
+    height: 25rem;
+    margin-bottom: 10px;
+}
+
+.card > img{
+    height: 16rem;
+}
+
+.card-body{
+    background: #c2c3c5;
+}
+
+.header{
+    background-color: #415078;
+    height: 90px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-inicio{
+    padding: 6px 13px;
+    background: #FFFFFF;
+    border-radius: 179.467px;
+    margin-left: 60px;
+ }
+
+ .direto{
+    word-spacing: 80px;
+  }
+
+  .direto > a:hover{
+    color: rgb(161, 156, 156);
+  }
+
+  a{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    text-decoration: none;
+    }
+
+
+    .icons{
+        color: #FFFFFF;
+        word-spacing: 20px;
+        margin-right: 20px;
+    }
+
+    .nav-principal{
+        background-color: #92A1C8;
+    }
+
+    #team-area{
+        padding-top: 70px;
+    }
+
+    .col-12{
+        padding-bottom: 50px;
+    }
+
+    .voltar-topo{
+        font-family: 'Jost';
+         padding: 15px 15px;
+         letter-spacing: 0.5px;
+         border-radius: 179.467px;
+         margin: 0px 190px 10px 972px;
+      }
+
+       button{
+          font-family: 'Jost';
+          background: #292F36;
+          color: #FFFFFF;
+          border-radius: 20px;
+          padding: 10px;
+      }
+      button:hover{
+          background: #424e5c;
+      }
+
+      .footer{
+          padding: 70px;
+          background-color: #415078;
+      }
