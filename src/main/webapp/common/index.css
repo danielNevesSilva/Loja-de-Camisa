@@ -1,10 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-/* -------------------------Poster---------------------------- */
-
+* -------------------------Poster---------------------------- */
 section.slider {
     margin: 0 auto;
     width: 100%;
@@ -13,14 +7,13 @@ section.slider {
     overflow: hidden;
 }
 
-
 .slider-content {
     width: 400%;
     height: auto;
     display: flex;
 }
 
-.slider-content input, .img-mobile {
+.slider-content input,.img-mobile {
     display: none;
 }
 
@@ -36,7 +29,7 @@ section.slider {
     width: 100%;
 }
 
-.nav-manual, .nav-auto {
+.nav-manual,.nav-auto {
     position: absolute;
     width: 100%;
     margin-top: 35%;
@@ -44,10 +37,8 @@ section.slider {
     justify-content: center;
 }
 
-
-
-
-.nav-manual .manual-btn, .nav-auto div {
+.nav-manual .manual-btn,
+.nav-auto div {
     border: 1px solid #EEF4FB;
     padding: 10px;
     border-radius: 50%;
@@ -57,20 +48,11 @@ section.slider {
 
 .nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) {
     margin-right: 10px;
-
 }
-
-
-
 
 .nav-manual .manual-btn:hover {
-
     background-color: #415078;
-
 }
-
-
-
 
 #radio1:checked~.nav-auto .auto-btn1 {
     background-color: #415078;
@@ -97,15 +79,14 @@ section.slider {
 }
 
 @media screen and (max-width:900px) {
-    .img-desktop {
+    /* .img-desktop {
         display: none;
     }
-
     .img-mobile {
         display: none;
-    }
+    } */
 
-    .nav-auto, .nav-manual {
+    .nav-auto,.nav-manual {
         margin-top: 60%;
     }
 }
@@ -170,7 +151,6 @@ section.slider {
     color: #EEF4FB;
 }
 
-
 .btn-1:hover {
     cursor: pointer;
     background-color: #92A1C8;
@@ -205,7 +185,7 @@ section.slider {
 .camisas {
     flex-direction: row;
     display: flex;
-    margin: 0px,100px;
+    margin: 0px, 100px;
     padding-left: 60px;
 }
 
@@ -224,7 +204,7 @@ section.slider {
 .descricao_camisa {
     font: 19px "PT-10";
     color: aliceblue;
-    margin: 10px,10px,10px;
+    margin: 10px, 10px, 10px;
     width: 350px;
 }
 
@@ -253,10 +233,12 @@ section.slider {
     transition: 0.5s;
 }
 
+
 .btn-2 a {
     font: 18px 'PT-14';
     color: #EEF4FB;
 }
+
 
 .btn-2:hover {
     cursor: pointer;
