@@ -15,25 +15,6 @@
         padding-bottom: 50px;
     }
 
-    .voltar-topo{
-        font-family: 'Jost';
-         padding: 15px 15px;
-         letter-spacing: 0.5px;
-         border-radius: 179.467px;
-         margin: 0px 190px 10px 972px;
-      }
-
-       button{
-          font-family: 'Jost';
-          background: #292F36;
-          color: #FFFFFF;
-          border-radius: 20px;
-          padding: 10px;
-      }
-      button:hover{
-          background: #424e5c;
-      }
-
       .footer{
           padding: 70px;
           background-color: #415078;
