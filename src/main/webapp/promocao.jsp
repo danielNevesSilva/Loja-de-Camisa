@@ -69,34 +69,36 @@
         <h2>OFERTAS</h2>
         </div>
         <div class="primeiro">
-              <c:forEach var="Produto" items="${Produtos}">
-              <a href="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${Produto.image}">
-                <img style="width: 150px, height 50px" src="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${Produto.image}" alt="...">
-                </a>
-                <div class="card-body">
+  c:forEach var="Produto" items="${Produtos}">
+        <div class="card-body">
+
+                              <a href="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${Produto.image}">
+                                <img style="width: 150px, height 50px" src="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${Produto.image}" alt="...">
+                                </a>
+
+
                     <p>Ano da camisa <td>${Produto.anoCamisa}</td></p>
-                    <p>Tamanho <td>${Produto.tamanho}</td>
-                    <p class="frete">Frete Grátis</p>
-                    <p>Valor <td>${Produto.valorProduto}</td></p>
+                   <p> Tamanho <td>${Produto.tamanho}</td></p>
+                     <p>class="frete">Frete Grátis</p>
+                   <p> Valor <td>${Produto.valorProduto}</td></p>
+
                 </div>
-              </c:forEach>
+</c:forEach>
               
             
                 </div>
+
                 <div class="voltar-topo">
                   <button>Voltar ao topo</button>
                   </div>
               </div>
-        
-    
-   
-    
+
 
     
     <div class="footer">
       <footer></footer>  
     </div>
-    
+
     
 </body>
 </html>
