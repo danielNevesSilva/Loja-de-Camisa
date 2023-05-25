@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./common/menu.css">
     <link rel="stylesheet" href="./common/promocao1.css">
 
-    <title>PROMOÇÃO</title>
+    <title>CAMISAS</title>
 
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
    rel="stylesheet">
@@ -31,7 +31,7 @@
                 <a href="/find-all-produtos">CAMISAS</a>
                 <a href="https://web.whatsapp.com/send?phone=5599111112222" target="_blank">CONTATO</a>
                 <a href="./time.html">QUEM SOMOS</a>
-                <a href="Dashboard.jsp"> Teste</a>
+
             </nav>
         </div>
 
@@ -47,14 +47,14 @@
             <nav>
                 <a href="index.html">INICIO</a>
                 <a href="/find-all-produtos">CAMISAS</a>
-                <a href="https://web.whatsapp.com/send?phone=5599111112222">CONTATO</a>
-                <a href="#">QUEM SOMOS</a>
+                <a href="https://web.whatsapp.com/send?phone=5511996701549">CONTATO</a>
+                <a href="./time.html">QUEM SOMOS</a>
             </nav>
         </div>
 
         <div class="login">
-            <a href="../webapp/login.jsp"> <img src="./assets/images/login.svg" alt=""></a>
-        </div>
+                   <a href="./login.jsp"> <img src="./assets/images/login.svg" alt=""></a>
+               </div>
 
     </div>
 
@@ -69,27 +69,26 @@
         <h2>OFERTAS</h2>
         </div>
         <div class="primeiro">
-  c:forEach var="Produto" items="${Produtos}">
+  <c:forEach var="Produto" items="${Produtos}">
         <div class="card-body">
 
                               <a href="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${Produto.image}">
                                 <img style="width: 150px, height 50px" src="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${Produto.image}" alt="...">
                                 </a>
 
-
-                    <p>Ano da camisa <td>${Produto.anoCamisa}</td></p>
-                   <p> Tamanho <td>${Produto.tamanho}</td></p>
-                     <p>class="frete">Frete Grátis</p>
-                   <p> Valor <td>${Produto.valorProduto}</td></p>
-
+                   <p>Camisa: <td>${Produto.nomeCamisa}</td></P>
+                   <p>Tamanho: <td>${Produto.tamanho}</td></p>
+                   <p> Valor: <td>${Produto.valorProduto}</td></p>
+                    <p>Ano da camisa: <td>${Produto.anoCamisa}</td></p>
+                     <button><p class="frete"> <a href="https://web.whatsapp.com/send?phone=5511996701549" target="_blank">Comprar</a> </p></button>
                 </div>
-</c:forEach>
-              
+            </c:forEach>
+
             
                 </div>
 
                 <div class="voltar-topo">
-                  <button>Voltar ao topo</button>
+
                   </div>
               </div>
 

@@ -1,6 +1,11 @@
 *{
     margin: 0px;
     box-sizing: border-box;
+
+}
+
+.body{
+ background-color: #415078;
 }
 
 .header{

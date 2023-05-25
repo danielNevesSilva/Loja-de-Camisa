@@ -78,7 +78,7 @@
 
         <p>Valor do produto:</p>
         <input id="valor_produto" name="valor_produto" required="required" value="${param.valor_camisa}" type="number">
-        <p>Quantidade</p>
+        <p hide >Quantidade</p>
         <input id="quantidade" name="quantidade" required="required" type="number">
 
     </div>
@@ -94,9 +94,9 @@
 
     </div>
 
-</div>
-<div class="rodape">
-<p>      </p>
+    </div>
+        <div class="rodape">
+        <p>      </p>
 </div>
 </body>
 </html>

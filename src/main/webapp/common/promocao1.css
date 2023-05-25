@@ -38,8 +38,9 @@
     color: #000206;
     font: "Poppins";
 }
-.frete{
-    color: #116939;
+.frete a{
+    text-decoration: none;
+    color: #FFFFFF;
     font: "Poppins";
 }
 .card-body{
@@ -52,7 +53,7 @@
 .card-body > p{
 font-size: 21px;
 display: grid;
-grid-template-rows: 1.7vh 1.7vh 1.7vh;
+grid-template-rows: 1.7vh 0vh 1.7vh;
 }
 
 .segundo{
@@ -67,20 +68,17 @@ grid-template-rows: 1.7vh 1.7vh 1.7vh;
 
 }
 
-.voltar-topo{
-    font-family: 'Jost';
-    padding: 15px 15px;
-    letter-spacing: 0.5px;
-    border-radius: 179.467px;
-    margin: 0px 190px 10px 972px;
-}
 
-button{
+
+
+ button{
     font-family: 'Jost';
     background: #292F36;
     color: #FFFFFF;
-    border-radius: 20px;
-    padding: 10px;
+    border-radius: 15spx;
+    width: 150px;
+    height: 40px;
+    font_size: 100px;
 }
 button:hover{
     background: #424e5c;
