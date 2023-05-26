@@ -76,7 +76,7 @@
                                 <img style="width: 150px, height 50px" src="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/${Produto.image}" alt="...">
                                 </a>
 
-                   <p>Camisa: <td>${Produto.nomeCamisa}</td></P>
+                   <p><td>${Produto.nomeCamisa}</td></P>
                    <p>Tamanho: <td>${Produto.tamanho}</td></p>
                    <p> Valor: <td>${Produto.valorProduto}</td></p>
                     <p>Ano da camisa: <td>${Produto.anoCamisa}</td></p>
