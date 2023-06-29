@@ -1,0 +1,80 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+span {
+  display: block;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+img {
+  max-width: 100px;
+  height: auto;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Estilos específicos */
+.container {
+  text-align: center;
+}
+
+.container a:first-child {
+  margin-right: 10px;
+}
+
+.container table {
+  margin-top: 40px;
+}
+
+.container th {
+  background-color: #333;
+  color: #fff;
+}
+
+.container td:last-child {
+  text-align: center;
+}

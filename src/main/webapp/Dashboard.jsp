@@ -2,22 +2,25 @@
 <html>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <head>
+<link rel="stylesheet" href="Dashbord.css">
     <meta charset="UTF-8">
     <title>Dashboard</title>
 </head>
 <body>
   <div>
+  <div class = "navbar">
    <span>${sessionScope.nome}</span>
  <p>  <a href="index.html">INICIO</a></p>
  <p>  <a href="produto.jsp">Adicione Produto</a></p>
  <p> <a href="cadastro.jsp"> Adicione usuario</a></p>
     <p><a href="/find-all-cadastro"></a></p>
-
         <p><a href="/logout">Logout</a></p>
 
+</div>
     <h1>ADMINISTRADOR</h1>
     <table>
         <tr>
+        <th> </th>
             <th>ID</th>
             <th>Nome</th>
             <th>Sobrenome</th>
