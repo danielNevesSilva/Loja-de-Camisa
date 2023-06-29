@@ -80,7 +80,6 @@
                    <p>Tamanho: <td>${Produto.tamanho}</td></p>
                    <p> Valor: <td>${Produto.valorProduto}</td></p>
                     <p>Ano da camisa: <td>${Produto.anoCamisa}</td></p>
-                     <button><p class="frete"> <a href="https://web.whatsapp.com/send?phone=5511996701549" target="_blank">Comprar</a> </p></button>
                 </div>
             </c:forEach>
 
