@@ -1,6 +1,7 @@
 package br.com.lojadecamisa.servlet.servlet;
 
 import br.com.lojadecamisa.servlet.dao.CadastroDao;
+import br.com.lojadecamisa.servlet.dao.ProdutoDao;
 import br.com.lojadecamisa.servlet.model.Cadastro;
 
 
@@ -39,16 +40,17 @@ public class CreateImagemServelet extends HttpServlet {
         String valor_produto = parameters.get("valor_produto");
         String quantidade = parameters.get("quantidade");
 
-        CadastroDao cadastroDao = new CadastroDao();
+        ProdutoDao produtoDao = new ProdutoDao();
         Produto produto = new Produto(id, ano_camisa, nome_camisa,tamanho ,valor_produto, quantidade, image );
 
         if (id.isBlank()) {
 
-            cadastroDao.createImagem(produto);
+            produtoDao.createImagem(produto);
+
 
         } else {
 
-            cadastroDao.updateProduto(produto);
+            produtoDao.updateProduto(produto);
         }
 
         resp.sendRedirect("find-all-produtos");

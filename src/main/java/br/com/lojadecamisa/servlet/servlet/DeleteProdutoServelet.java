@@ -1,6 +1,7 @@
 package br.com.lojadecamisa.servlet.servlet;
 
 import br.com.lojadecamisa.servlet.dao.CadastroDao;
+import br.com.lojadecamisa.servlet.dao.ProdutoDao;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -16,7 +17,8 @@ public class DeleteProdutoServelet extends HttpServlet {
 
         String ProdutoId = req.getParameter("id");
 
-        new CadastroDao().deleteProdutoById(ProdutoId);
+
+        new ProdutoDao().deleteProdutoById(ProdutoId);
 
         resp.sendRedirect("/find-all-produtosADM");
 

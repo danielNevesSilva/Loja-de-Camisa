@@ -1,6 +1,7 @@
 package br.com.lojadecamisa.servlet.servlet;
 
 import br.com.lojadecamisa.servlet.dao.CadastroDao;
+import br.com.lojadecamisa.servlet.dao.ProdutoDao;
 import br.com.lojadecamisa.servlet.model.Produto;
 
 import javax.servlet.ServletException;
@@ -24,7 +25,8 @@ import java.util.List;
 
             } else {
 
-                List<Produto> Produtos = new CadastroDao().selectProdutos();
+
+                List<Produto> Produtos = new ProdutoDao().selectProdutos();
 
                 req.setAttribute("Produtos", Produtos);
 
