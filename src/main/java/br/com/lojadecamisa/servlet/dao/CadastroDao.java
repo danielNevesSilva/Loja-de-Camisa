@@ -1,8 +1,7 @@
 package br.com.lojadecamisa.servlet.dao;
 
+import br.com.lojadecamisa.servlet.config.ConnectionPoolConfig;
 import br.com.lojadecamisa.servlet.model.Cadastro;
-
-import br.com.lojadecamisa.servlet.model.Produto;
 
 
 import java.sql.*;
@@ -13,12 +12,11 @@ import java.util.List;
 public class CadastroDao {
 
     public void createaccount(Cadastro cadastro) {
+
         String SQL = "INSERT INTO ADMINISTRADOR (NOME, SOBRENOME, EMAIL, SENHA) VALUES (?,?,?,?)";
 
         try {
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
-
-            System.out.println("success in connection");
+            Connection connection = ConnectionPoolConfig.getConnection();
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
             preparedStatement.setString(1, cadastro.getNome());
@@ -29,7 +27,7 @@ public class CadastroDao {
             preparedStatement.execute();
             connection.close();
         } catch (Exception e) {
-            System.out.println("fail in connection");
+            System.out.println("fail in connection create" + e);
         }
     }
 
@@ -71,9 +69,7 @@ public class CadastroDao {
 
         try {
 
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
-
-            System.out.println("success in database connection");
+            Connection connection = ConnectionPoolConfig.getConnection();
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
             preparedStatement.setString(1, CadastroId);
@@ -85,7 +81,7 @@ public class CadastroDao {
 
         } catch (Exception e) {
 
-            System.out.println("fail in database connection");
+            System.out.println("fail in database connection delete" + e);
         }
     }
 
@@ -96,9 +92,7 @@ public class CadastroDao {
 
         try {
 
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
-
-            System.out.println("success in database connection");
+            Connection connection = ConnectionPoolConfig.getConnection();
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
@@ -114,7 +108,7 @@ public class CadastroDao {
 
         } catch (Exception e) {
 
-            System.out.println("fail in database connection");
+            System.out.println("fail in database connection update" + e);
             System.out.println("Error: " + e.getMessage());
 
         }
@@ -127,7 +121,7 @@ public class CadastroDao {
 
         try{
 
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+            Connection connection = ConnectionPoolConfig.getConnection();
 
             System.out.println("success in database connection");
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);

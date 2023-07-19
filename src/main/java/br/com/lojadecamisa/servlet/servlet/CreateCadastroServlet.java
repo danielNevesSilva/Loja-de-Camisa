@@ -33,7 +33,7 @@ public class CreateCadastroServlet extends HttpServlet {
             cadastroDao.updateCadastro(cadastro);
         }
 
-        resp.sendRedirect("find-all-Cadastro");
+        resp.sendRedirect("Cadastros");
 
     }
 

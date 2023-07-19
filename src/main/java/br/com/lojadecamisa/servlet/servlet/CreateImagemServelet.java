@@ -43,17 +43,15 @@ public class CreateImagemServelet extends HttpServlet {
         ProdutoDao produtoDao = new ProdutoDao();
         Produto produto = new Produto(id, ano_camisa, nome_camisa,tamanho ,valor_produto, quantidade, image );
 
-        if (id.isBlank()) {
+       if (id != null) {
 
-            produtoDao.createImagem(produto);
-
+          produtoDao.updateProduto(produto);
 
         } else {
-
-            produtoDao.updateProduto(produto);
+            produtoDao.createImagem(produto);
         }
 
-        resp.sendRedirect("find-all-produtos");
+        resp.sendRedirect("Lista-de-camisas");
 
     }
 

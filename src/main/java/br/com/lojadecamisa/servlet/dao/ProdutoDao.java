@@ -1,5 +1,6 @@
 package br.com.lojadecamisa.servlet.dao;
 
+import br.com.lojadecamisa.servlet.config.ConnectionPoolConfig;
 import br.com.lojadecamisa.servlet.model.Produto;
 
 import java.sql.Connection;
@@ -17,8 +18,7 @@ public class ProdutoDao {
         String SQL = "INSERT INTO PRODUTO  (ANOCAMISA, NOMECAMISA, TAMANHO, PRECO, QUANTIDADE, IMAGE) VALUES (?, ?, ?, ?, ?, ?)";
         try {
 
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
-
+            Connection connection = ConnectionPoolConfig.getConnection();
             System.out.println("success in database connection");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
@@ -83,9 +83,7 @@ public class ProdutoDao {
 
         try {
 
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
-
-            System.out.println("success in database connection");
+            Connection connection = ConnectionPoolConfig.getConnection();
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
             preparedStatement.setString(1, ProdutoId);
@@ -97,7 +95,7 @@ public class ProdutoDao {
 
         } catch (Exception e) {
 
-            System.out.println("fail in database connection");
+            System.out.println("fail in database connection delete" + e);
         }
     }
 
@@ -108,7 +106,7 @@ public class ProdutoDao {
 
         try {
 
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+            Connection connection = ConnectionPoolConfig.getConnection();
 
             System.out.println("success in database connection");
 
@@ -116,17 +114,16 @@ public class ProdutoDao {
 
             preparedStatement.setString(1, produto.getAnoCamisa());
             preparedStatement.setString(2, produto.getNomeCamisa());
+            preparedStatement.setString(3, produto.getId());
 
-            preparedStatement.setString(5, produto.getId());
             preparedStatement.execute();
-
             System.out.println("success in update PRODUTO");
 
             connection.close();
 
         } catch (Exception e) {
 
-            System.out.println("fail in database connection");
+            System.out.println("fail in database connection update" + e);
             System.out.println("Error: " + e.getMessage());
 
         }
