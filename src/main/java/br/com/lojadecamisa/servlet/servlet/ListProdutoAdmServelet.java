@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
-    @WebServlet("/find-all-produtosADM")
+    @WebServlet("/Lista-de-camisas")
     public class ListProdutoAdmServelet  extends HttpServlet {
 
         @Override

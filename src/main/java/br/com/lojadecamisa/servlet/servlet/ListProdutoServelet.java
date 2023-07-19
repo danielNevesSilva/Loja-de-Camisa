@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/find-all-produtos")
+@WebServlet("/Oferta-de-camisas")
 public class ListProdutoServelet extends HttpServlet {
 
     @Override

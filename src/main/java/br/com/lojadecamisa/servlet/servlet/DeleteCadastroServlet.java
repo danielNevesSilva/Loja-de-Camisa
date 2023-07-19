@@ -20,7 +20,7 @@ public class DeleteCadastroServlet extends HttpServlet {
 
         new CadastroDao().deleteCadastroById(CadastroId);
 
-        resp.sendRedirect("/find-all-Cadastro");
+        resp.sendRedirect("/Cadastros");
 
     }
 

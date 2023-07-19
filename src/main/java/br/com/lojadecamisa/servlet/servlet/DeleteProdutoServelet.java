@@ -20,7 +20,7 @@ public class DeleteProdutoServelet extends HttpServlet {
 
         new ProdutoDao().deleteProdutoById(ProdutoId);
 
-        resp.sendRedirect("/find-all-produtosADM");
+        resp.sendRedirect("/Lista-de-camisas");
 
     }
 

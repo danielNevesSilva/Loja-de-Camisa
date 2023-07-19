@@ -32,7 +32,7 @@ public class LoginServelet extends HttpServlet {
 
             req.getSession().setAttribute("nome_cad", nome);
 
-            resp.sendRedirect("find-all-Cadastro");
+            resp.sendRedirect("Cadastros");
 
         } else {
 
