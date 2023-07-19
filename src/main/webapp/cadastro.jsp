@@ -25,9 +25,9 @@
             <nav>
                 <a href="index.html">INICIO</a>
                 <a href="https://web.whatsapp.com/send?phone=5599111112222" target="_blank">CONTATO</a>
-                <a href="/find-all-produtos">CAMISAS</a>
-                <a href="/find-all-produtosADM">ADMIN</a>
-                <a href="cadastro.jsp">TELA CAD</a>
+                <a href="/Oferta-de-camisas">CAMISAS</a>
+                <a href="/Lista-de-camisas">ADMIN</a>
+
             </nav>
         </div>
 
@@ -89,12 +89,6 @@
                         <label for="senha_cad">Senha</label>
                         <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="  ********"  value="${param.senha}" />
                     </p>
-                    <p>
-                        <label for="senha_cad">Confirme senha</label>
-                        <input id="confsenha_cad" name="confsenha_cad" required="required" type="password"
-                            placeholder="  ********" />
-                    </p>
-
 
                     <input type="hidden" id="id" name="id" value="${param.id}">
                         <button class="botao-cadastro" input type="submit" value="Cadastrar" > Cadastrar</button>

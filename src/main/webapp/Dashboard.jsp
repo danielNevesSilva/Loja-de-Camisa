@@ -13,7 +13,8 @@
  <p>  <a href="index.html">INICIO</a></p>
  <p>  <a href="produto.jsp">Adicione Produto</a></p>
  <p> <a href="cadastro.jsp"> Adicione usuario</a></p>
-    <p><a href="/find-all-cadastro"></a></p>
+    <p><a href="/Cadastros">Lista de Usuarios</a></p>
+    <p><a href="/Lista-de-camisas">Lista de produtos</a></p>
         <p><a href="/logout">Logout</a></p>
 
 </div>
@@ -39,7 +40,7 @@
            <input type="hidden" id="id" name="id" value="${Cadastro.id}">
                                     <button type="submit">Delete</button>
                                     <span> | </span>
-<a href="index.jsp?=id${Cadastro.id}&nome=${Cadastro.nome}&sobrenome=${Cadastro.sobrenome}&email=${Cadastro.email}&senha=${Cadastro.senha}">Update</a>
+      <button style="background-color: orange;" "text-decoration: none;" ><a href="cadastro.jsp?=id${Cadastro.id}&nome=${Cadastro.nome}&sobrenome=${Cadastro.sobrenome}&email=${Cadastro.email}&senha=${Cadastro.senha}">Alterar</a> </button>
                                     </form>
                                   </td>
             </tr>

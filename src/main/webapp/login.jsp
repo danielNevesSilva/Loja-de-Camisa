@@ -23,8 +23,9 @@
             <nav>
                 <a href="index.html">INICIO</a>
                 <a href="https://web.whatsapp.com/send?phone=5599111112222" target="_blank">CONTATO</a>
-                <a href="/find-all-produtos">CAMISAS</a>
-                <a href="/find-all-produtosADM">ADMIN</a>
+                <a href="/Oferta-de-camisas">CAMISAS</a>
+                <a href="/Lista-de-camisas">ADMIN</a>
+
 
             </nav>
         </div>

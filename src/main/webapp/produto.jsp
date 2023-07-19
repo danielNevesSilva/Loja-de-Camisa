@@ -15,10 +15,9 @@
     </div>
     <div class="direto">
         <a href="index.html">INICIO</a>
-        <a href="/find-all-produtos">CAMISAS</a>
+        <a href="/Oferta-de-camisas">CAMISAS</a>
         <a href="https://web.whatsapp.com/send?phone=5599111112222" target="_blank">CONTATO</a>
-        <a href="#">QUEM SOMOS</a>
-        <a href="/find-all-produtosADM">ADMIN</a>
+    <a href="/Lista-de-camisas">LISTA DE PRODUTOS</a>
     </div>
 
     <div class="icons">
@@ -39,22 +38,22 @@
             <p>Tamanho do produto:</p>
             <div class="rd">
 
-                <input id="P" name="tamanho" value="P" type="radio">
+                <input id="tamanho" name="tamanho" value="P" type="radio" required="required" value="${param_tamanho}">
                 <label for="P">P</label>
-                <input id="M" name="tamanho" value="M" type="radio">
+                <input id="tamanho" name="tamanho" value="M" type="radio" required="required" value="${param_tamanho}">
                 <label for="M">M</label>
-                <input id="G" name="tamanho" value="G" type="radio">
+                <input id="tamanho" name="tamanho" value="G" type="radio" required="required" value="${param_tamanho}">
                 <label for="G">G</label>
-                <input id="GG" name="tamanho" value="GG" type="radio">
+                <input id="tamanho" name="tamanho" value="GG" type="radio" required="required" value="${param_tamanho}">
                 <label for="GG">GG</label>
             </div>
             <p>Valor do produto:</p>
-            <input id="valor_produto" name="valor_produto" required="required" value="${param.valor_camisa}" type="number">
+            <input id="valor_camisa" name="valor_camisa" required="required" value="${param.valor_camisa}" type="number">
             <p hide>Quantidade</p>
-            <input id="quantidade" name="quantidade" required="required" type="number">
+            <input id="quantidade" name="quantidade" required="required" value="${param.quantidade}" type="number">
     </div>
     <div class="descricao">
-        <input type="hidden" id="id" name="id" value="${param.id}">
+        <input type="hidden" id="id_camisa" name="id_camisa" value="${param.id_camisa}">
         Selecione uma imagem para enviar: <input type="file" name="file" id="file"><br>
         <input type="submit" value="Enviar">
         </form>
