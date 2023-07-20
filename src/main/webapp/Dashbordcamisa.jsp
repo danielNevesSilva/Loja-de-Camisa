@@ -46,7 +46,7 @@
                                                         <input type="hidden" id="id" name="id" value="${Produto.id}">
                    <button type="submit">Delete</button>
                     <span> | </span>
-              <button style="background-color: orange;"><a href="produto.jsp?id=${Produto.id}&ano_camisa=${Produto.anoCamisa}&nome_camisa=${Produto.nomeCamisa}&tamanho=${Produto_tamanho}&valor_produto=${Produto.valorProduto}&id=${Produto.image}">Alterar</a>   </button>                                                                                                        </form>
+              <button style="background-color: orange;"><a href="produto.jsp?id=${Produto.id}&ano_camisa=${Produto.anoCamisa}&nome_camisa=${Produto.nomeCamisa}&tamanho=${Produto.tamanho}&valor_produto=${Produto.valorProduto}&quantidade=${Produto.quantidade}&image=${Produto.image}">Alterar</a>   </button>                                                                                                        </form>
                          </td>
                       </tr>
                    </c:forEach>

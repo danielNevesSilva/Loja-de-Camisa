@@ -102,7 +102,7 @@ public class ProdutoDao {
 
     public void updateProduto(Produto produto) {
 
-        String SQL = "UPDATE PRODUTO SET ANOCAMISA = ?, NOMECAMISA = ? WHERE ID_PRODUTO = ?  ";
+        String SQL = "UPDATE PRODUTO SET ANOCAMISA = ?, NOMECAMISA = ?, TAMANHO = ?, PRECO = ?, QUANTIDADE= ?, IMAGE = ?  WHERE ID_PRODUTO = ?  ";
 
         try {
 
@@ -114,7 +114,12 @@ public class ProdutoDao {
 
             preparedStatement.setString(1, produto.getAnoCamisa());
             preparedStatement.setString(2, produto.getNomeCamisa());
-            preparedStatement.setString(3, produto.getId());
+            preparedStatement.setString(3, produto.getTamanho());
+            preparedStatement.setString(4, produto.getValorProduto());
+            preparedStatement.setString(5, produto.getTamanho());
+            preparedStatement.setString(6, produto.getImage());
+
+            preparedStatement.setString(7, produto.getId());
 
             preparedStatement.execute();
             System.out.println("success in update PRODUTO");

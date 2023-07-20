@@ -99,7 +99,7 @@ public class CadastroDao {
             preparedStatement.setString(1, cadastro.getNome());
             preparedStatement.setString(2, cadastro.getSobrenome());
 
-            preparedStatement.setString(5, cadastro.getId());
+            preparedStatement.setString(3, cadastro.getId());
             preparedStatement.execute();
 
             System.out.println("success in update ADMINISTRADOR");
