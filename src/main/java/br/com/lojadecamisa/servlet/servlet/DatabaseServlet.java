@@ -20,7 +20,7 @@ public class DatabaseServlet {
 
             Connection connection = ConnectionPoolConfig.getConnection();
 
-            RunScript.execute(connection, new FileReader("src/main/resources/db.sql"));
+            RunScript.execute(connection, new FileReader("src/main/java/resources/script.sql"));
 
             System.out.println("Success on load database tables");
 

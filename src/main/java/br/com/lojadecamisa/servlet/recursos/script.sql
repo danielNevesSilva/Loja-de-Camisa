@@ -16,3 +16,12 @@ preco decimal(5,2),
 quantidade varchar(4),
 image varchar(255)
 );
+
+create table POST(
+id_produto int primary key not null auto_increment,
+USERNAME varchar(40),
+TITLE varchar(100),
+BODY varchar(100),
+IMAGE varchar(255)
+);
+

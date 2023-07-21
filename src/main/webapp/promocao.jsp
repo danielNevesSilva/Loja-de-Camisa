@@ -27,10 +27,10 @@
 
         <div class="menu">
             <nav>
-                <a href="index.html">INICIO</a>
-                <a href="/find-all-produtos">CAMISAS</a>
-                <a href="https://web.whatsapp.com/send?phone=5599111112222" target="_blank">CONTATO</a>
-                <a href="./time.html">QUEM SOMOS</a>
+                    <a href="/Oferta-de-camisas">CAMISAS</a>
+                    <a href="https://web.whatsapp.com/send?phone=5511996701549" target="_blank">CONTATO</a>
+                    <a href="/Avaliacoes">AVALIACOES</a>
+                    <a href="./time.html">QUEM SOMOS</a>
 
             </nav>
         </div>
